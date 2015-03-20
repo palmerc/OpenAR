@@ -1,0 +1,39 @@
+PODS:
+  - boost (1.51.0):
+    - boost/graph-includes (= 1.51.0)
+    - boost/math-includes (= 1.51.0)
+    - boost/numeric-includes (= 1.51.0)
+    - boost/pointer_cast-includes (= 1.51.0)
+    - boost/preprocessor-includes (= 1.51.0)
+    - boost/shared_ptr-includes (= 1.51.0)
+    - boost/string_algorithms-includes (= 1.51.0)
+  - boost/graph-includes (1.51.0)
+  - boost/math-includes (1.51.0)
+  - boost/numeric-includes (1.51.0)
+  - boost/pointer_cast-includes (1.51.0)
+  - boost/preprocessor-includes (1.51.0)
+  - boost/shared_ptr-includes (1.51.0)
+  - boost/string_algorithms-includes (1.51.0)
+  - CocoaLumberjack (1.9.2):
+    - CocoaLumberjack/Extensions (= 1.9.2)
+  - CocoaLumberjack/Core (1.9.2)
+  - CocoaLumberjack/Extensions (1.9.2):
+    - CocoaLumberjack/Core
+  - eigen (3.2.0):
+    - boost/numeric-includes
+    - boost/preprocessor-includes
+  - OpenCV (2.4.9.1)
+
+DEPENDENCIES:
+  - boost (~> 1.51.0)
+  - CocoaLumberjack (~> 1.9.2)
+  - eigen (~> 3.2.0)
+  - OpenCV (~> 2.4.9.1)
+
+SPEC CHECKSUMS:
+  boost: 581038adda16d11045576013ad27e3eeeabc2d10
+  CocoaLumberjack: 205769c032b5fef85b92472046bcc8b7e7c8a817
+  eigen: 35fe8eb8f0e7ef950ad49ea18852af7b8c67aeaa
+  OpenCV: d8474123d65cbc3d70575de8b76de6ed2ae7b8c5
+
+COCOAPODS: 0.36.0

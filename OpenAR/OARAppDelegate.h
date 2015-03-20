@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  OARAppDelegate.h
 //  OpenAR
 //
 //  Created by Cameron Palmer on 20.03.15.
@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+
+
+@interface OARAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

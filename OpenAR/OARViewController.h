@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  OARViewController.h
 //  OpenAR
 //
 //  Created by Cameron Palmer on 20.03.15.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
 
 
+@interface OARViewController : UIViewController
 @end
 

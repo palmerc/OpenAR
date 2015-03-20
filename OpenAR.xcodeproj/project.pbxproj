@@ -7,13 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C7B10DF71ABC2D370020BFDB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B10DF61ABC2D370020BFDB /* main.m */; };
-		C7B10DFA1ABC2D370020BFDB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B10DF91ABC2D370020BFDB /* AppDelegate.m */; };
-		C7B10DFD1ABC2D370020BFDB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B10DFC1ABC2D370020BFDB /* ViewController.m */; };
-		C7B10E001ABC2D370020BFDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7B10DFE1ABC2D370020BFDB /* Main.storyboard */; };
-		C7B10E021ABC2D370020BFDB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7B10E011ABC2D370020BFDB /* Images.xcassets */; };
-		C7B10E051ABC2D370020BFDB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7B10E031ABC2D370020BFDB /* LaunchScreen.xib */; };
+		C7B10DFA1ABC2D370020BFDB /* OARAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B10DF91ABC2D370020BFDB /* OARAppDelegate.m */; };
+		C7B10DFD1ABC2D370020BFDB /* OARViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B10DFC1ABC2D370020BFDB /* OARViewController.m */; };
 		C7B10E111ABC2D370020BFDB /* OpenARTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B10E101ABC2D370020BFDB /* OpenARTests.m */; };
+		C7B10E1C1ABC338B0020BFDB /* OARLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B10E1B1ABC338B0020BFDB /* OARLogger.m */; };
+		C7B10E201ABC34560020BFDB /* OARLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B10E1B1ABC338B0020BFDB /* OARLogger.m */; };
+		C7B10E211ABC34560020BFDB /* OARViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B10DFC1ABC2D370020BFDB /* OARViewController.m */; };
+		C7B10E221ABC34560020BFDB /* OARAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B10DF91ABC2D370020BFDB /* OARAppDelegate.m */; };
+		C7B10E251ABC34560020BFDB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D07789987C8EF4AAF74FE0 /* libPods.a */; };
+		C7B10E3A1ABC3D8D0020BFDB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7B10E311ABC3D8D0020BFDB /* LaunchScreen.xib */; };
+		C7B10E3B1ABC3D8D0020BFDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7B10E331ABC3D8D0020BFDB /* Main.storyboard */; };
+		C7B10E3C1ABC3D8D0020BFDB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7B10E351ABC3D8D0020BFDB /* Images.xcassets */; };
+		C7B10E3F1ABC3D8D0020BFDB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B10E391ABC3D8D0020BFDB /* main.m */; };
+		C7B10E401ABC3DB20020BFDB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B10E391ABC3D8D0020BFDB /* main.m */; };
+		C7B10E421ABC3DCA0020BFDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7B10E331ABC3D8D0020BFDB /* Main.storyboard */; };
+		C7B10E431ABC3DCF0020BFDB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7B10E311ABC3D8D0020BFDB /* LaunchScreen.xib */; };
+		C7B10E441ABC3DD40020BFDB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7B10E351ABC3D8D0020BFDB /* Images.xcassets */; };
+		C7B10E4B1ABC41690020BFDB /* OARVideoSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B10E4A1ABC41690020BFDB /* OARVideoSource.m */; };
+		C7B10E4C1ABC416D0020BFDB /* OARVideoSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B10E4A1ABC41690020BFDB /* OARVideoSource.m */; };
+		C7B10E531ABC42D70020BFDB /* UIDevice+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B10E521ABC42D70020BFDB /* UIDevice+Extensions.m */; };
+		C7B10E561ABC44A10020BFDB /* NSNumber+CVPixelFormatType.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B10E551ABC44A10020BFDB /* NSNumber+CVPixelFormatType.m */; };
+		C7B10E571ABC44A40020BFDB /* NSNumber+CVPixelFormatType.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B10E551ABC44A10020BFDB /* NSNumber+CVPixelFormatType.m */; };
+		C7B10E5C1ABC47310020BFDB /* NSString+CameraResolution.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B10E591ABC47310020BFDB /* NSString+CameraResolution.m */; };
+		C7B10E5D1ABC47310020BFDB /* NSString+CameraResolution.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B10E591ABC47310020BFDB /* NSString+CameraResolution.m */; };
+		C7B10E5E1ABC47310020BFDB /* UIImage+Checkerboard.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B10E5B1ABC47310020BFDB /* UIImage+Checkerboard.m */; };
+		C7B10E5F1ABC47310020BFDB /* UIImage+Checkerboard.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B10E5B1ABC47310020BFDB /* UIImage+Checkerboard.m */; };
+		EE3828C7F91A24DACD92B071 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D07789987C8EF4AAF74FE0 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +46,39 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05D07789987C8EF4AAF74FE0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0662252C111B9520A1365D4A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		67BA103F224BBE5502DC10E2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C7B10DF11ABC2D370020BFDB /* OpenAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C7B10DF51ABC2D370020BFDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C7B10DF61ABC2D370020BFDB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C7B10DF81ABC2D370020BFDB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		C7B10DF91ABC2D370020BFDB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C7B10DFB1ABC2D370020BFDB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C7B10DFC1ABC2D370020BFDB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		C7B10DFF1ABC2D370020BFDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C7B10E011ABC2D370020BFDB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		C7B10E041ABC2D370020BFDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		C7B10DF81ABC2D370020BFDB /* OARAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OARAppDelegate.h; sourceTree = "<group>"; };
+		C7B10DF91ABC2D370020BFDB /* OARAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OARAppDelegate.m; sourceTree = "<group>"; };
+		C7B10DFB1ABC2D370020BFDB /* OARViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OARViewController.h; sourceTree = "<group>"; };
+		C7B10DFC1ABC2D370020BFDB /* OARViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OARViewController.m; sourceTree = "<group>"; };
 		C7B10E0A1ABC2D370020BFDB /* OpenARTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenARTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7B10E0F1ABC2D370020BFDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7B10E101ABC2D370020BFDB /* OpenARTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenARTests.m; sourceTree = "<group>"; };
+		C7B10E1A1ABC32D50020BFDB /* OARLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OARLogger.h; sourceTree = "<group>"; };
+		C7B10E1B1ABC338B0020BFDB /* OARLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OARLogger.m; sourceTree = "<group>"; };
+		C7B10E2E1ABC34560020BFDB /* OpenAR Development.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OpenAR Development.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7B10E321ABC3D8D0020BFDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		C7B10E341ABC3D8D0020BFDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C7B10E351ABC3D8D0020BFDB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C7B10E361ABC3D8D0020BFDB /* OpenAR Development-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "OpenAR Development-Info.plist"; sourceTree = "<group>"; };
+		C7B10E371ABC3D8D0020BFDB /* OpenAR-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "OpenAR-Info.plist"; sourceTree = "<group>"; };
+		C7B10E391ABC3D8D0020BFDB /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C7B10E491ABC41690020BFDB /* OARVideoSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OARVideoSource.h; sourceTree = "<group>"; };
+		C7B10E4A1ABC41690020BFDB /* OARVideoSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OARVideoSource.m; sourceTree = "<group>"; };
+		C7B10E4D1ABC41820020BFDB /* OARBasicVideoFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OARBasicVideoFrame.h; sourceTree = "<group>"; };
+		C7B10E4E1ABC41E80020BFDB /* OARCameraResolution.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OARCameraResolution.h; sourceTree = "<group>"; };
+		C7B10E4F1ABC42310020BFDB /* OARCameraPosition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OARCameraPosition.h; sourceTree = "<group>"; };
+		C7B10E511ABC42D70020BFDB /* UIDevice+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Extensions.h"; sourceTree = "<group>"; };
+		C7B10E521ABC42D70020BFDB /* UIDevice+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Extensions.m"; sourceTree = "<group>"; };
+		C7B10E541ABC44A10020BFDB /* NSNumber+CVPixelFormatType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+CVPixelFormatType.h"; sourceTree = "<group>"; };
+		C7B10E551ABC44A10020BFDB /* NSNumber+CVPixelFormatType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+CVPixelFormatType.m"; sourceTree = "<group>"; };
+		C7B10E581ABC47310020BFDB /* NSString+CameraResolution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CameraResolution.h"; sourceTree = "<group>"; };
+		C7B10E591ABC47310020BFDB /* NSString+CameraResolution.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CameraResolution.m"; sourceTree = "<group>"; };
+		C7B10E5A1ABC47310020BFDB /* UIImage+Checkerboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Checkerboard.h"; sourceTree = "<group>"; };
+		C7B10E5B1ABC47310020BFDB /* UIImage+Checkerboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Checkerboard.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE3828C7F91A24DACD92B071 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,15 +97,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C7B10E241ABC34560020BFDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7B10E251ABC34560020BFDB /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B721D8949A36B5F00641F8EC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				67BA103F224BBE5502DC10E2 /* Pods.debug.xcconfig */,
+				0662252C111B9520A1365D4A /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C7B10DE81ABC2D370020BFDB = {
 			isa = PBXGroup;
 			children = (
 				C7B10DF31ABC2D370020BFDB /* OpenAR */,
 				C7B10E0D1ABC2D370020BFDB /* OpenARTests */,
 				C7B10DF21ABC2D370020BFDB /* Products */,
+				B721D8949A36B5F00641F8EC /* Pods */,
+				E00E59B897D911C831573024 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +133,7 @@
 			children = (
 				C7B10DF11ABC2D370020BFDB /* OpenAR.app */,
 				C7B10E0A1ABC2D370020BFDB /* OpenARTests.xctest */,
+				C7B10E2E1ABC34560020BFDB /* OpenAR Development.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,25 +141,18 @@
 		C7B10DF31ABC2D370020BFDB /* OpenAR */ = {
 			isa = PBXGroup;
 			children = (
-				C7B10DF81ABC2D370020BFDB /* AppDelegate.h */,
-				C7B10DF91ABC2D370020BFDB /* AppDelegate.m */,
-				C7B10DFB1ABC2D370020BFDB /* ViewController.h */,
-				C7B10DFC1ABC2D370020BFDB /* ViewController.m */,
-				C7B10DFE1ABC2D370020BFDB /* Main.storyboard */,
-				C7B10E011ABC2D370020BFDB /* Images.xcassets */,
-				C7B10E031ABC2D370020BFDB /* LaunchScreen.xib */,
-				C7B10DF41ABC2D370020BFDB /* Supporting Files */,
+				C7B10DF81ABC2D370020BFDB /* OARAppDelegate.h */,
+				C7B10DF91ABC2D370020BFDB /* OARAppDelegate.m */,
+				C7B10E1A1ABC32D50020BFDB /* OARLogger.h */,
+				C7B10E1B1ABC338B0020BFDB /* OARLogger.m */,
+				C7B10DFB1ABC2D370020BFDB /* OARViewController.h */,
+				C7B10DFC1ABC2D370020BFDB /* OARViewController.m */,
+				C7B10E501ABC42D70020BFDB /* Categories */,
+				C7B10E481ABC414F0020BFDB /* Video */,
+				C7B10E301ABC3D8D0020BFDB /* Resources */,
+				C7B10E381ABC3D8D0020BFDB /* Supporting Files */,
 			);
 			path = OpenAR;
-			sourceTree = "<group>";
-		};
-		C7B10DF41ABC2D370020BFDB /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				C7B10DF51ABC2D370020BFDB /* Info.plist */,
-				C7B10DF61ABC2D370020BFDB /* main.m */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		C7B10E0D1ABC2D370020BFDB /* OpenARTests */ = {
@@ -119,6 +172,61 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C7B10E301ABC3D8D0020BFDB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C7B10E311ABC3D8D0020BFDB /* LaunchScreen.xib */,
+				C7B10E331ABC3D8D0020BFDB /* Main.storyboard */,
+				C7B10E351ABC3D8D0020BFDB /* Images.xcassets */,
+				C7B10E361ABC3D8D0020BFDB /* OpenAR Development-Info.plist */,
+				C7B10E371ABC3D8D0020BFDB /* OpenAR-Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C7B10E381ABC3D8D0020BFDB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C7B10E391ABC3D8D0020BFDB /* main.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C7B10E481ABC414F0020BFDB /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				C7B10E491ABC41690020BFDB /* OARVideoSource.h */,
+				C7B10E4A1ABC41690020BFDB /* OARVideoSource.m */,
+				C7B10E4D1ABC41820020BFDB /* OARBasicVideoFrame.h */,
+				C7B10E4E1ABC41E80020BFDB /* OARCameraResolution.h */,
+				C7B10E4F1ABC42310020BFDB /* OARCameraPosition.h */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		C7B10E501ABC42D70020BFDB /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				C7B10E581ABC47310020BFDB /* NSString+CameraResolution.h */,
+				C7B10E591ABC47310020BFDB /* NSString+CameraResolution.m */,
+				C7B10E5A1ABC47310020BFDB /* UIImage+Checkerboard.h */,
+				C7B10E5B1ABC47310020BFDB /* UIImage+Checkerboard.m */,
+				C7B10E511ABC42D70020BFDB /* UIDevice+Extensions.h */,
+				C7B10E521ABC42D70020BFDB /* UIDevice+Extensions.m */,
+				C7B10E541ABC44A10020BFDB /* NSNumber+CVPixelFormatType.h */,
+				C7B10E551ABC44A10020BFDB /* NSNumber+CVPixelFormatType.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		E00E59B897D911C831573024 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05D07789987C8EF4AAF74FE0 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +234,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7B10E141ABC2D370020BFDB /* Build configuration list for PBXNativeTarget "OpenAR" */;
 			buildPhases = (
+				54D28EFE65586C580B9E2B47 /* Check Pods Manifest.lock */,
 				C7B10DED1ABC2D370020BFDB /* Sources */,
 				C7B10DEE1ABC2D370020BFDB /* Frameworks */,
 				C7B10DEF1ABC2D370020BFDB /* Resources */,
+				60C0B05090DA3688FAB5EDC8 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -156,6 +266,25 @@
 			productName = OpenARTests;
 			productReference = C7B10E0A1ABC2D370020BFDB /* OpenARTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C7B10E1D1ABC34560020BFDB /* OpenAR Development */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7B10E2B1ABC34560020BFDB /* Build configuration list for PBXNativeTarget "OpenAR Development" */;
+			buildPhases = (
+				C7B10E1E1ABC34560020BFDB /* Check Pods Manifest.lock */,
+				C7B10E1F1ABC34560020BFDB /* Sources */,
+				C7B10E241ABC34560020BFDB /* Frameworks */,
+				C7B10E261ABC34560020BFDB /* Resources */,
+				C7B10E2A1ABC34560020BFDB /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OpenAR Development";
+			productName = OpenAR;
+			productReference = C7B10E2E1ABC34560020BFDB /* OpenAR Development.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -189,6 +318,7 @@
 			projectRoot = "";
 			targets = (
 				C7B10DF01ABC2D370020BFDB /* OpenAR */,
+				C7B10E1D1ABC34560020BFDB /* OpenAR Development */,
 				C7B10E091ABC2D370020BFDB /* OpenARTests */,
 			);
 		};
@@ -199,9 +329,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7B10E001ABC2D370020BFDB /* Main.storyboard in Resources */,
-				C7B10E051ABC2D370020BFDB /* LaunchScreen.xib in Resources */,
-				C7B10E021ABC2D370020BFDB /* Images.xcassets in Resources */,
+				C7B10E3C1ABC3D8D0020BFDB /* Images.xcassets in Resources */,
+				C7B10E3A1ABC3D8D0020BFDB /* LaunchScreen.xib in Resources */,
+				C7B10E3B1ABC3D8D0020BFDB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,16 +342,95 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C7B10E261ABC34560020BFDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7B10E441ABC3DD40020BFDB /* Images.xcassets in Resources */,
+				C7B10E431ABC3DCF0020BFDB /* LaunchScreen.xib in Resources */,
+				C7B10E421ABC3DCA0020BFDB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		54D28EFE65586C580B9E2B47 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		60C0B05090DA3688FAB5EDC8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7B10E1E1ABC34560020BFDB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C7B10E2A1ABC34560020BFDB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C7B10DED1ABC2D370020BFDB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7B10DFD1ABC2D370020BFDB /* ViewController.m in Sources */,
-				C7B10DFA1ABC2D370020BFDB /* AppDelegate.m in Sources */,
-				C7B10DF71ABC2D370020BFDB /* main.m in Sources */,
+				C7B10E4B1ABC41690020BFDB /* OARVideoSource.m in Sources */,
+				C7B10E1C1ABC338B0020BFDB /* OARLogger.m in Sources */,
+				C7B10E531ABC42D70020BFDB /* UIDevice+Extensions.m in Sources */,
+				C7B10DFD1ABC2D370020BFDB /* OARViewController.m in Sources */,
+				C7B10E561ABC44A10020BFDB /* NSNumber+CVPixelFormatType.m in Sources */,
+				C7B10E3F1ABC3D8D0020BFDB /* main.m in Sources */,
+				C7B10E5E1ABC47310020BFDB /* UIImage+Checkerboard.m in Sources */,
+				C7B10DFA1ABC2D370020BFDB /* OARAppDelegate.m in Sources */,
+				C7B10E5C1ABC47310020BFDB /* NSString+CameraResolution.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +439,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7B10E111ABC2D370020BFDB /* OpenARTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7B10E1F1ABC34560020BFDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7B10E4C1ABC416D0020BFDB /* OARVideoSource.m in Sources */,
+				C7B10E201ABC34560020BFDB /* OARLogger.m in Sources */,
+				C7B10E5F1ABC47310020BFDB /* UIImage+Checkerboard.m in Sources */,
+				C7B10E211ABC34560020BFDB /* OARViewController.m in Sources */,
+				C7B10E5D1ABC47310020BFDB /* NSString+CameraResolution.m in Sources */,
+				C7B10E401ABC3DB20020BFDB /* main.m in Sources */,
+				C7B10E571ABC44A40020BFDB /* NSNumber+CVPixelFormatType.m in Sources */,
+				C7B10E221ABC34560020BFDB /* OARAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,20 +468,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C7B10DFE1ABC2D370020BFDB /* Main.storyboard */ = {
+		C7B10E311ABC3D8D0020BFDB /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C7B10DFF1ABC2D370020BFDB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		C7B10E031ABC2D370020BFDB /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C7B10E041ABC2D370020BFDB /* Base */,
+				C7B10E321ABC3D8D0020BFDB /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		C7B10E331ABC3D8D0020BFDB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7B10E341ABC3D8D0020BFDB /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -341,9 +565,10 @@
 		};
 		C7B10E151ABC2D370020BFDB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67BA103F224BBE5502DC10E2 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = OpenAR/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/OpenAR/Resources/OpenAR-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -351,9 +576,10 @@
 		};
 		C7B10E161ABC2D370020BFDB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0662252C111B9520A1365D4A /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = OpenAR/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/OpenAR/Resources/OpenAR-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -393,6 +619,36 @@
 			};
 			name = Release;
 		};
+		C7B10E2C1ABC34560020BFDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67BA103F224BBE5502DC10E2 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEVELOPMENT=1",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/OpenAR/Resources/OpenAR Development-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "OpenAR Development";
+			};
+			name = Debug;
+		};
+		C7B10E2D1ABC34560020BFDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0662252C111B9520A1365D4A /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEVELOPMENT=1",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/OpenAR/Resources/OpenAR Development-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "OpenAR Development";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -412,6 +668,7 @@
 				C7B10E161ABC2D370020BFDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C7B10E171ABC2D370020BFDB /* Build configuration list for PBXNativeTarget "OpenARTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +677,16 @@
 				C7B10E191ABC2D370020BFDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7B10E2B1ABC34560020BFDB /* Build configuration list for PBXNativeTarget "OpenAR Development" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7B10E2C1ABC34560020BFDB /* Debug */,
+				C7B10E2D1ABC34560020BFDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
