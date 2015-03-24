@@ -32,6 +32,8 @@
 		C7B10E5D1ABC47310020BFDB /* NSString+CameraResolution.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B10E591ABC47310020BFDB /* NSString+CameraResolution.m */; };
 		C7B10E5E1ABC47310020BFDB /* UIImage+Checkerboard.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B10E5B1ABC47310020BFDB /* UIImage+Checkerboard.m */; };
 		C7B10E5F1ABC47310020BFDB /* UIImage+Checkerboard.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B10E5B1ABC47310020BFDB /* UIImage+Checkerboard.m */; };
+		C7D0FBAB1ABC5CE40021618D /* OARIntrinsicView.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D0FBAA1ABC5CE40021618D /* OARIntrinsicView.m */; };
+		C7D0FBAC1ABC5F230021618D /* OARIntrinsicView.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D0FBAA1ABC5CE40021618D /* OARIntrinsicView.m */; };
 		EE3828C7F91A24DACD92B071 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D07789987C8EF4AAF74FE0 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +81,8 @@
 		C7B10E591ABC47310020BFDB /* NSString+CameraResolution.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CameraResolution.m"; sourceTree = "<group>"; };
 		C7B10E5A1ABC47310020BFDB /* UIImage+Checkerboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Checkerboard.h"; sourceTree = "<group>"; };
 		C7B10E5B1ABC47310020BFDB /* UIImage+Checkerboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Checkerboard.m"; sourceTree = "<group>"; };
+		C7D0FBA91ABC5CE40021618D /* OARIntrinsicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OARIntrinsicView.h; sourceTree = "<group>"; };
+		C7D0FBAA1ABC5CE40021618D /* OARIntrinsicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OARIntrinsicView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +151,8 @@
 				C7B10E1B1ABC338B0020BFDB /* OARLogger.m */,
 				C7B10DFB1ABC2D370020BFDB /* OARViewController.h */,
 				C7B10DFC1ABC2D370020BFDB /* OARViewController.m */,
+				C7D0FBA91ABC5CE40021618D /* OARIntrinsicView.h */,
+				C7D0FBAA1ABC5CE40021618D /* OARIntrinsicView.m */,
 				C7B10E501ABC42D70020BFDB /* Categories */,
 				C7B10E481ABC414F0020BFDB /* Video */,
 				C7B10E301ABC3D8D0020BFDB /* Resources */,
@@ -429,6 +435,7 @@
 				C7B10E561ABC44A10020BFDB /* NSNumber+CVPixelFormatType.m in Sources */,
 				C7B10E3F1ABC3D8D0020BFDB /* main.m in Sources */,
 				C7B10E5E1ABC47310020BFDB /* UIImage+Checkerboard.m in Sources */,
+				C7D0FBAB1ABC5CE40021618D /* OARIntrinsicView.m in Sources */,
 				C7B10DFA1ABC2D370020BFDB /* OARAppDelegate.m in Sources */,
 				C7B10E5C1ABC47310020BFDB /* NSString+CameraResolution.m in Sources */,
 			);
@@ -446,6 +453,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7D0FBAC1ABC5F230021618D /* OARIntrinsicView.m in Sources */,
 				C7B10E4C1ABC416D0020BFDB /* OARVideoSource.m in Sources */,
 				C7B10E201ABC34560020BFDB /* OARLogger.m in Sources */,
 				C7B10E5F1ABC47310020BFDB /* UIImage+Checkerboard.m in Sources */,
@@ -571,6 +579,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/OpenAR/Resources/OpenAR-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -582,6 +591,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/OpenAR/Resources/OpenAR-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -631,6 +641,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/OpenAR/Resources/OpenAR Development-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "OpenAR Development";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -646,6 +657,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/OpenAR/Resources/OpenAR Development-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "OpenAR Development";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

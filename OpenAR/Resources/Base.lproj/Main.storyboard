@@ -15,11 +15,67 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="300" placeholderIntrinsicHeight="300" translatesAutoresizingMaskIntoConstraints="NO" id="Q1v-4l-jMz" customClass="OARIntrinsicView">
+                                <rect key="frame" x="150" y="150" width="300" height="300"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cUC-hw-uvF">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="cUC-hw-uvF" firstAttribute="leading" secondItem="Q1v-4l-jMz" secondAttribute="leading" id="7fT-wf-ZMH"/>
+                                    <constraint firstAttribute="bottom" secondItem="cUC-hw-uvF" secondAttribute="bottom" id="MYq-sS-qj7"/>
+                                    <constraint firstItem="cUC-hw-uvF" firstAttribute="top" secondItem="Q1v-4l-jMz" secondAttribute="top" id="nZ5-xV-8Bw"/>
+                                    <constraint firstAttribute="trailing" secondItem="cUC-hw-uvF" secondAttribute="trailing" id="udN-PK-Fqe"/>
+                                </constraints>
+                            </view>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qeW-oB-HDx">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <barButtonItem title="4:3" id="oEI-g0-EiE" userLabel="Background Fill Screen">
+                                        <connections>
+                                            <action selector="didPressBackgroundFillScreenButton:" destination="vXZ-lx-hvc" id="7B4-vQ-WFK"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="LVw-xN-lWy"/>
+                                    <barButtonItem title="720p" id="yw3-vP-dfC" userLabel="Camera Resolution">
+                                        <connections>
+                                            <action selector="didPressCameraResolutionButton:" destination="vXZ-lx-hvc" id="c4p-Pd-O8d"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem image="Camera Switch " id="NhV-AU-JYD" userLabel="Camera Switch">
+                                        <connections>
+                                            <action selector="didPressCameraSwitchButton:" destination="vXZ-lx-hvc" id="jTr-4k-woc"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qeW-oB-HDx" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="3hI-Xi-0by"/>
+                            <constraint firstAttribute="centerX" secondItem="Q1v-4l-jMz" secondAttribute="centerX" id="Bj3-ZG-J4T"/>
+                            <constraint firstAttribute="trailing" secondItem="qeW-oB-HDx" secondAttribute="trailing" id="J0f-Cr-wWh"/>
+                            <constraint firstAttribute="centerY" secondItem="Q1v-4l-jMz" secondAttribute="centerY" id="KjN-vX-qqZ"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="qeW-oB-HDx" secondAttribute="bottom" id="Qvx-Ui-E0w"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backgroundFillScreenButtonItem" destination="oEI-g0-EiE" id="L2e-l7-TUc"/>
+                        <outlet property="cameraResolutionButtonItem" destination="yw3-vP-dfC" id="KZ0-h4-w8l"/>
+                        <outlet property="cameraSwitchButtonItem" destination="NhV-AU-JYD" id="v12-Cf-Bj0"/>
+                        <outlet property="imageView" destination="cUC-hw-uvF" id="VYS-gq-rqk"/>
+                        <outlet property="intrinsicView" destination="Q1v-4l-jMz" id="9ee-by-503"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="Camera Switch " width="22" height="22"/>
+    </resources>
 </document>

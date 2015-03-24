@@ -75,7 +75,14 @@
 
 - (NSUInteger)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window
 {
-    return UIInterfaceOrientationMaskLandscapeLeft;
+    NSUInteger deviceOrientation;
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        deviceOrientation = UIInterfaceOrientationMaskLandscapeRight;
+    } else {
+        deviceOrientation = UIInterfaceOrientationMaskLandscapeLeft;
+    }
+
+    return deviceOrientation;
 }
 
 + (NSURL *)applicationDocumentURL

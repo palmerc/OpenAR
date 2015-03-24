@@ -44,7 +44,7 @@
 @optional
 - (void)didUpdateCameraSize:(CGSize)cameraSize;
 - (void)didUpdateGrayscaleVideoFrame:(OARBasicVideoFrame)videoFrame;
-- (void)didUpdateVideoImage:(UIImage *)videoImage;
+- (void)didUpdateVideoImage:(CIImage *)videoImage;
 - (void)didStartVideoSource:(OARVideoSource *)captureSession;
 - (void)didStopVideoSource:(OARVideoSource *)captureSession;
 

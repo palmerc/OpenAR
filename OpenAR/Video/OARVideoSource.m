@@ -13,7 +13,7 @@
 #import "NSString+CameraResolution.h"
 
 static NSString *const kCameraQueueName = @"no.ntnu.oar.cameraQueue";
-
+static NSUInteger kFrameTimeBufferSize = 15;
 
 
 @interface OARVideoSource ()
@@ -30,6 +30,12 @@ static NSString *const kCameraQueueName = @"no.ntnu.oar.cameraQueue";
 
 @property (strong, nonatomic) id runtimeErrorHandlingObserver;
 
+@property (unsafe_unretained, nonatomic) float *frameTimestamps;
+@property (assign, nonatomic) NSUInteger frameTimestampIndex;
+@property (assign, nonatomic) NSUInteger frameTimestampCount;
+@property (assign, nonatomic) CMTimeValue lastFrameTimestamp;
+@property (assign, nonatomic) CGFloat captureQueueFPS;
+
 @property (assign, nonatomic, readwrite) CGSize cameraSize;
 
 @end
@@ -44,6 +50,7 @@ static NSString *const kCameraQueueName = @"no.ntnu.oar.cameraQueue";
 
 - (void)dealloc
 {
+    free(_frameTimestamps);
     [self.captureSession stopRunning];
 }
 
@@ -54,12 +61,14 @@ static NSString *const kCameraQueueName = @"no.ntnu.oar.cameraQueue";
         self.supportedVideoResolutions = @[AVCaptureSessionPreset640x480,
                                            AVCaptureSessionPreset1280x720,
                                            AVCaptureSessionPreset1920x1080];
+        _cameraSize = CGSizeZero;
         _cameraPosition = OARCameraPositionUnknown;
         _cameraResolution = OARCameraResolutionUnknown;
         _observers = [NSPointerArray weakObjectsPointerArray];
         _pixelFormat = @(kCVPixelFormatType_420YpCbCr8BiPlanarFullRange);
         _videoDataOutputQueue = dispatch_queue_create([kCameraQueueName UTF8String], DISPATCH_QUEUE_SERIAL);
         dispatch_set_target_queue(_videoDataOutputQueue, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0));
+        _frameTimestamps = malloc(kFrameTimeBufferSize * sizeof(float));
 
         [self setupCaptureSession];
     }
@@ -93,7 +102,9 @@ static NSString *const kCameraQueueName = @"no.ntnu.oar.cameraQueue";
     @synchronized(self.observers) {
         for (id observer in self.observers) {
             if ([observer respondsToSelector:@selector(didUpdateCameraSize:)]) {
-                [observer didUpdateCameraSize:cameraSize];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [observer didUpdateCameraSize:cameraSize];
+                });
             }
         }
     }
@@ -241,6 +252,11 @@ static NSString *const kCameraQueueName = @"no.ntnu.oar.cameraQueue";
 - (void)startVideoSource
 {
     void (^cameraSessionStart)() = ^{
+        self.captureQueueFPS = 0.f;
+        self.lastFrameTimestamp = 0.f;
+        self.frameTimestampCount = 0;
+        self.frameTimestampIndex = 0;
+
         if (self.cameraPosition == OARCameraPositionUnknown) {
             self.cameraPosition = OARCameraPositionBack;
         }
@@ -380,38 +396,73 @@ static NSString *const kCameraQueueName = @"no.ntnu.oar.cameraQueue";
         return;
     }
 
-    int32_t frameRate = 15;
+    int32_t minimumFrameRate, maximumFrameRate = 15;
     NSString *sessionPreset = AVCaptureSessionPresetHigh;
     if (resolution == OARCameraResolutionVGA) {
         sessionPreset = AVCaptureSessionPreset640x480;
-        frameRate = 24;
+        maximumFrameRate = 24;
     } else if (resolution == OARCameraResolution720p) {
         sessionPreset = AVCaptureSessionPreset1280x720;
-        frameRate = 30;
+        maximumFrameRate = 30;
     } else if (resolution == OARCameraResolution1080p) {
         sessionPreset = AVCaptureSessionPreset1920x1080;
-        frameRate = 30;
+        maximumFrameRate = 30;
     }
 
     if ([self.captureSession canSetSessionPreset:sessionPreset]) {
-        DDLogInfo(@"Set session preset %@ at %d FPS", sessionPreset, frameRate);
+        DDLogInfo(@"Set session preset %@ at %d FPS", sessionPreset, maximumFrameRate);
         [self.captureSession setSessionPreset:sessionPreset];
     } else {
         DDLogError(@"Cannot set session preset to %@", sessionPreset);
     }
 
-    CMTime frameDuration = CMTimeMake(1, frameRate);
+    CMTime minimumFrameDuration = CMTimeMake(1, minimumFrameRate);
+    CMTime maximumFrameDuration = CMTimeMake(1, maximumFrameRate);
 
     NSError *error = nil;
     if ([self.videoDevice lockForConfiguration:&error]) {
-        self.videoDevice.activeVideoMinFrameDuration = frameDuration;
-        self.videoDevice.activeVideoMaxFrameDuration = frameDuration;
+        self.videoDevice.activeVideoMinFrameDuration = minimumFrameDuration;
+        self.videoDevice.activeVideoMaxFrameDuration = maximumFrameDuration;
         [self.videoDevice unlockForConfiguration];
     } else {
         DDLogError(@"videoDevice lockForConfiguration returned error - %@", error);
     }
 
     _cameraResolution = resolution;
+}
+
+- (void)calculateFPSWithTime:(CMTime)presentationTime
+{
+    if (self.lastFrameTimestamp == 0) {
+        self.lastFrameTimestamp = presentationTime.value;
+        self.frameTimestampCount = 1;
+    } else {
+        float frameTime = (float)(presentationTime.value - self.lastFrameTimestamp) / presentationTime.timescale;
+        self.lastFrameTimestamp = presentationTime.value;
+
+        _frameTimestamps[self.frameTimestampIndex++] = frameTime;
+
+        if (self.frameTimestampIndex >= kFrameTimeBufferSize) {
+            self.frameTimestampIndex = 0;
+        }
+
+        float totalFrameTime = 0.f;
+        for (NSUInteger i = 0; i < self.frameTimestampCount; i++) {
+            totalFrameTime += _frameTimestamps[i];
+        }
+
+        float averageFrameTime = totalFrameTime / self.frameTimestampCount;
+        float fps = 1.f / averageFrameTime;
+
+        if (fabsf(fps - self.captureQueueFPS) > 0.1f) {
+            self.captureQueueFPS = fps;
+        }
+
+        self.frameTimestampCount++;
+        if (self.frameTimestampCount > kFrameTimeBufferSize) {
+            self.frameTimestampCount = kFrameTimeBufferSize;
+        }
+    }
 }
 
 
@@ -424,6 +475,9 @@ static NSString *const kCameraQueueName = @"no.ntnu.oar.cameraQueue";
     static unsigned long frameCount = 1;
     NSDate *start = [NSDate date];
 #endif
+
+    CMTime presentationTime = CMSampleBufferGetOutputPresentationTimeStamp(sampleBuffer);
+    [self calculateFPSWithTime:presentationTime];
 
     CVImageBufferRef videoImageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer);
 
@@ -451,11 +505,16 @@ static NSString *const kCameraQueueName = @"no.ntnu.oar.cameraQueue";
     @synchronized(self.observers) {
         for (id observer in self.observers) {
             if ([observer respondsToSelector:@selector(didUpdateGrayscaleVideoFrame:)]) {
-                [observer didUpdateGrayscaleVideoFrame:videoFrame];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [observer didUpdateGrayscaleVideoFrame:videoFrame];
+                });
             }
+            
             if ([observer respondsToSelector:@selector(didUpdateVideoImage:)]) {
                 CIImage *videoImage = [CIImage imageWithCVPixelBuffer:videoImageBuffer];
-                [observer didUpdateVideoImage:[UIImage imageWithCIImage:videoImage]];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [observer didUpdateVideoImage:videoImage];
+                });
             }
         }
     }
@@ -466,7 +525,7 @@ static NSString *const kCameraQueueName = @"no.ntnu.oar.cameraQueue";
     NSDate *end = [NSDate date];
     NSTimeInterval time = [end timeIntervalSinceDate:start];
     NSString *imageSizeText = NSStringFromCGSize(CGSizeMake(width, height));
-    DDLogDebug(@"Frame %lu, %@, processing time %.1fms", frameCount, imageSizeText, time * 1000);
+    DDLogDebug(@"Frame %lu, %@, processing time %.2fms, %.2f FPS", frameCount, imageSizeText, time * 1000, self.captureQueueFPS);
     frameCount++;
 #endif
 }
