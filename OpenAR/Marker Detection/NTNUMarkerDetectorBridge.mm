@@ -13,12 +13,12 @@
 #import <opencv2/core/core.hpp>
 #import <Accelerate/Accelerate.h>
 
-#import "NTNUAppDelegate.h"
+#import "OARAppDelegate.h"
 #import "NTNUCameraCalibration.h"
-#import "NTNUFramemarker.h"
-#import "NTNULogger.h"
+#import "OARFramemarker.h"
+#import "OARLogger.h"
 #import "PACMarkerDetectionFacade.h"
-#import "NTNUBasicVideoFrame.h"
+#import "OARBasicVideoFrame.h"
 
 static NSString *const kOpenCVDispatchQueueName = @"no.ntnu.smartscan.OpenCV";
 
@@ -65,13 +65,13 @@ static NSString *const kOpenCVDispatchQueueName = @"no.ntnu.smartscan.OpenCV";
 
     _markerDetectorFacade.release();
     _markerDetectorFacade = markerDetectorWithCalibration(calibration);
-    _markerDetectorFacade->setDocumentDirectory([[[NTNUAppDelegate applicationDocumentURL] path] UTF8String]);
+    _markerDetectorFacade->setDocumentDirectory([[[OARAppDelegate applicationDocumentURL] path] UTF8String]);
 }
 
 - (void)setFramemarkers:(NSArray *)framemarkers
 {
     std::vector<std::shared_ptr<ntnu::Framemarker>> markers;
-    for (NTNUFramemarker *framemarker in framemarkers) {
+    for (OARFramemarker *framemarker in framemarkers) {
         ntnu::Framemarker *oldMarker = static_cast<ntnu::Framemarker *>(framemarker.impl);
         std::shared_ptr<ntnu::Framemarker> marker(new ntnu::Framemarker(*oldMarker));
         markers.push_back(marker);
@@ -130,7 +130,7 @@ static NSString *const kOpenCVDispatchQueueName = @"no.ntnu.smartscan.OpenCV";
 
 #pragma mark - PACVideoSourceDelegate methods
 
-- (void)didUpdateGrayscaleVideoFrame:(NTNUBasicVideoFrame)grayscaleVideoFrame
+- (void)didUpdateGrayscaleVideoFrame:(OARBasicVideoFrame)grayscaleVideoFrame
 {
     @synchronized (self.processingFrame) {
         if ([self.isProcessingFrame boolValue]) {
@@ -141,20 +141,20 @@ static NSString *const kOpenCVDispatchQueueName = @"no.ntnu.smartscan.OpenCV";
     }
 
     void *grayscaleData = malloc(grayscaleVideoFrame.totalBytes);
-    memcpy(grayscaleData, grayscaleVideoFrame.rawPixelData, grayscaleVideoFrame.totalBytes);
+    memcpy(grayscaleData, grayscaleVideoFrame.baseAddress, grayscaleVideoFrame.totalBytes);
 
-    __block NTNUBasicVideoFrame videoFrame = {
+    __block OARBasicVideoFrame videoFrame = {
         .width = grayscaleVideoFrame.width,
         .height = grayscaleVideoFrame.height,
         .bytesPerRow = grayscaleVideoFrame.bytesPerRow,
         .totalBytes = grayscaleVideoFrame.totalBytes,
-        .rawPixelData = grayscaleData
+        .baseAddress = grayscaleData
     };
     dispatch_async(self.openCVDispatchQueue, ^{
         cv::Mat cvMatVideoFrame = [self cvMatFromVideoFrame:videoFrame];
 
         [self processVideo:cvMatVideoFrame];
-        free(videoFrame.rawPixelData);
+        free(videoFrame.baseAddress);
         @synchronized (self.processingFrame) {
             self.processingFrame = @NO;
         }
@@ -175,7 +175,7 @@ static NSString *const kOpenCVDispatchQueueName = @"no.ntnu.smartscan.OpenCV";
     if (markers.size() > 0) {
         NSMutableArray *mutableFrameMarkers = [[NSMutableArray alloc] initWithCapacity:markers.size()];
         for (auto marker : markers) {
-            NTNUFramemarker *framemarker = [[NTNUFramemarker alloc] initWithFramemarker:marker.get()];
+            OARFramemarker *framemarker = [[OARFramemarker alloc] initWithFramemarker:marker.get()];
             [mutableFrameMarkers addObject:framemarker];
         }
 
@@ -191,11 +191,11 @@ static NSString *const kOpenCVDispatchQueueName = @"no.ntnu.smartscan.OpenCV";
     }
 }
 
-- (cv::Mat)cvMatFromVideoFrame:(const NTNUBasicVideoFrame &)videoFrame
+- (cv::Mat)cvMatFromVideoFrame:(const OARBasicVideoFrame &)videoFrame
 {
-    cv::Mat cvMat(cv::Size(videoFrame.width, videoFrame.height),
+    cv::Mat cvMat(cv::Size((int)videoFrame.width, (int)videoFrame.height),
                   CV_8UC1,
-                  videoFrame.rawPixelData);
+                  videoFrame.baseAddress);
     return cvMat;
 }
 

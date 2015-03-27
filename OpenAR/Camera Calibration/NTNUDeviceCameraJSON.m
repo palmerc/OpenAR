@@ -9,8 +9,8 @@
 #import "NTNUDeviceCameraJSON.h"
 
 #import "NTNUCameraCalibrationJSON.h"
-#import "UIDevice+NTNUExtensions.h"
-#import "NTNULogger.h"
+#import "UIDevice+Extensions.h"
+#import "OARLogger.h"
 
 
 

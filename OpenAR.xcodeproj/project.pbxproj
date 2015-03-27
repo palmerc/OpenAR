@@ -34,6 +34,44 @@
 		C7B10E5F1ABC47310020BFDB /* UIImage+Checkerboard.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B10E5B1ABC47310020BFDB /* UIImage+Checkerboard.m */; };
 		C7D0FBAB1ABC5CE40021618D /* OARIntrinsicView.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D0FBAA1ABC5CE40021618D /* OARIntrinsicView.m */; };
 		C7D0FBAC1ABC5F230021618D /* OARIntrinsicView.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D0FBAA1ABC5CE40021618D /* OARIntrinsicView.m */; };
+		C7D0FBC31AC5447F0021618D /* NTNUMarkerDetectorBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = C7D0FBB41AC5447F0021618D /* NTNUMarkerDetectorBridge.mm */; };
+		C7D0FBC41AC5447F0021618D /* NTNUMarkerDetectorBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = C7D0FBB41AC5447F0021618D /* NTNUMarkerDetectorBridge.mm */; };
+		C7D0FBC51AC5447F0021618D /* PACCameraCalibration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7D0FBB51AC5447F0021618D /* PACCameraCalibration.cpp */; };
+		C7D0FBC61AC5447F0021618D /* PACCameraCalibration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7D0FBB51AC5447F0021618D /* PACCameraCalibration.cpp */; };
+		C7D0FBC71AC5447F0021618D /* PACMarker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7D0FBB71AC5447F0021618D /* PACMarker.cpp */; };
+		C7D0FBC81AC5447F0021618D /* PACMarker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7D0FBB71AC5447F0021618D /* PACMarker.cpp */; };
+		C7D0FBC91AC5447F0021618D /* PACMarkerDetector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7D0FBBA1AC5447F0021618D /* PACMarkerDetector.cpp */; };
+		C7D0FBCA1AC5447F0021618D /* PACMarkerDetector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7D0FBBA1AC5447F0021618D /* PACMarkerDetector.cpp */; };
+		C7D0FBCB1AC5447F0021618D /* PACTinyLA.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7D0FBBC1AC5447F0021618D /* PACTinyLA.cpp */; };
+		C7D0FBCC1AC5447F0021618D /* PACTinyLA.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7D0FBBC1AC5447F0021618D /* PACTinyLA.cpp */; };
+		C7D0FBD21AC545AE0021618D /* NSLogCPP.mm in Sources */ = {isa = PBXBuildFile; fileRef = C7D0FBD11AC545AE0021618D /* NSLogCPP.mm */; };
+		C7D0FBD31AC545AE0021618D /* NSLogCPP.mm in Sources */ = {isa = PBXBuildFile; fileRef = C7D0FBD11AC545AE0021618D /* NSLogCPP.mm */; };
+		C7D0FBEF1AC546890021618D /* NTNUCameraCalibration.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D0FBD91AC546890021618D /* NTNUCameraCalibration.m */; };
+		C7D0FBF01AC546890021618D /* NTNUCameraCalibration.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D0FBD91AC546890021618D /* NTNUCameraCalibration.m */; };
+		C7D0FBF11AC546890021618D /* NTNUCameraCalibrationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D0FBDB1AC546890021618D /* NTNUCameraCalibrationFactory.m */; };
+		C7D0FBF21AC546890021618D /* NTNUCameraCalibrationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D0FBDB1AC546890021618D /* NTNUCameraCalibrationFactory.m */; };
+		C7D0FBF31AC546890021618D /* NTNUCameraCalibrationFactoryJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D0FBDD1AC546890021618D /* NTNUCameraCalibrationFactoryJSON.m */; };
+		C7D0FBF41AC546890021618D /* NTNUCameraCalibrationFactoryJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D0FBDD1AC546890021618D /* NTNUCameraCalibrationFactoryJSON.m */; };
+		C7D0FBF51AC546890021618D /* NTNUCameraCalibrationJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D0FBDF1AC546890021618D /* NTNUCameraCalibrationJSON.m */; };
+		C7D0FBF61AC546890021618D /* NTNUCameraCalibrationJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D0FBDF1AC546890021618D /* NTNUCameraCalibrationJSON.m */; };
+		C7D0FBF71AC546890021618D /* NTNUDeviceCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D0FBE31AC546890021618D /* NTNUDeviceCamera.m */; };
+		C7D0FBF81AC546890021618D /* NTNUDeviceCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D0FBE31AC546890021618D /* NTNUDeviceCamera.m */; };
+		C7D0FBF91AC546890021618D /* NTNUDeviceCameraJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D0FBE51AC546890021618D /* NTNUDeviceCameraJSON.m */; };
+		C7D0FBFA1AC546890021618D /* NTNUDeviceCameraJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D0FBE51AC546890021618D /* NTNUDeviceCameraJSON.m */; };
+		C7D0FC011AC546890021618D /* TransformationType.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7D0FBEB1AC546890021618D /* TransformationType.cpp */; };
+		C7D0FC021AC546890021618D /* TransformationType.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7D0FBEB1AC546890021618D /* TransformationType.cpp */; };
+		C7D0FC091AC54D9B0021618D /* OARFramemarker.mm in Sources */ = {isa = PBXBuildFile; fileRef = C7D0FC061AC54D9B0021618D /* OARFramemarker.mm */; };
+		C7D0FC0A1AC54D9B0021618D /* OARFramemarker.mm in Sources */ = {isa = PBXBuildFile; fileRef = C7D0FC061AC54D9B0021618D /* OARFramemarker.mm */; };
+		C7D0FC0B1AC54D9B0021618D /* OARFramemarkerJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D0FC081AC54D9B0021618D /* OARFramemarkerJSON.m */; };
+		C7D0FC0C1AC54D9B0021618D /* OARFramemarkerJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D0FC081AC54D9B0021618D /* OARFramemarkerJSON.m */; };
+		C7D0FC121AC553320021618D /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7D0FC101AC553320021618D /* Accelerate.framework */; };
+		C7D0FC131AC553320021618D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7D0FC111AC553320021618D /* AVFoundation.framework */; };
+		C7D0FC141AC5533D0021618D /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7D0FC101AC553320021618D /* Accelerate.framework */; };
+		C7D0FC151AC5533D0021618D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7D0FC111AC553320021618D /* AVFoundation.framework */; };
+		C7D0FC171AC553570021618D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7D0FC161AC553570021618D /* OpenGLES.framework */; };
+		C7D0FC181AC553600021618D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7D0FC161AC553570021618D /* OpenGLES.framework */; };
+		C7D0FC201AC556720021618D /* libVuforia.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7D0FC1F1AC556720021618D /* libVuforia.a */; };
+		C7D0FC211AC5568A0021618D /* libVuforia.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7D0FC1F1AC556720021618D /* libVuforia.a */; };
 		EE3828C7F91A24DACD92B071 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D07789987C8EF4AAF74FE0 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +121,45 @@
 		C7B10E5B1ABC47310020BFDB /* UIImage+Checkerboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Checkerboard.m"; sourceTree = "<group>"; };
 		C7D0FBA91ABC5CE40021618D /* OARIntrinsicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OARIntrinsicView.h; sourceTree = "<group>"; };
 		C7D0FBAA1ABC5CE40021618D /* OARIntrinsicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OARIntrinsicView.m; sourceTree = "<group>"; };
+		C7D0FBB31AC5447F0021618D /* NTNUMarkerDetectorBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTNUMarkerDetectorBridge.h; sourceTree = "<group>"; };
+		C7D0FBB41AC5447F0021618D /* NTNUMarkerDetectorBridge.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NTNUMarkerDetectorBridge.mm; sourceTree = "<group>"; };
+		C7D0FBB51AC5447F0021618D /* PACCameraCalibration.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PACCameraCalibration.cpp; sourceTree = "<group>"; };
+		C7D0FBB61AC5447F0021618D /* PACCameraCalibration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PACCameraCalibration.h; sourceTree = "<group>"; };
+		C7D0FBB71AC5447F0021618D /* PACMarker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PACMarker.cpp; sourceTree = "<group>"; };
+		C7D0FBB81AC5447F0021618D /* PACMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PACMarker.h; sourceTree = "<group>"; };
+		C7D0FBB91AC5447F0021618D /* PACMarkerDetectionFacade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PACMarkerDetectionFacade.h; sourceTree = "<group>"; };
+		C7D0FBBA1AC5447F0021618D /* PACMarkerDetector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PACMarkerDetector.cpp; sourceTree = "<group>"; };
+		C7D0FBBB1AC5447F0021618D /* PACMarkerDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PACMarkerDetector.h; sourceTree = "<group>"; };
+		C7D0FBBC1AC5447F0021618D /* PACTinyLA.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PACTinyLA.cpp; sourceTree = "<group>"; };
+		C7D0FBBD1AC5447F0021618D /* PACTinyLA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PACTinyLA.h; sourceTree = "<group>"; };
+		C7D0FBBE1AC5447F0021618D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C7D0FBCF1AC544F80021618D /* OARLoggerCPP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OARLoggerCPP.h; sourceTree = "<group>"; };
+		C7D0FBD01AC545AE0021618D /* NSLogCPP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSLogCPP.h; sourceTree = "<group>"; };
+		C7D0FBD11AC545AE0021618D /* NSLogCPP.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NSLogCPP.mm; sourceTree = "<group>"; };
+		C7D0FBD81AC546890021618D /* NTNUCameraCalibration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTNUCameraCalibration.h; sourceTree = "<group>"; };
+		C7D0FBD91AC546890021618D /* NTNUCameraCalibration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTNUCameraCalibration.m; sourceTree = "<group>"; };
+		C7D0FBDA1AC546890021618D /* NTNUCameraCalibrationFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTNUCameraCalibrationFactory.h; sourceTree = "<group>"; };
+		C7D0FBDB1AC546890021618D /* NTNUCameraCalibrationFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTNUCameraCalibrationFactory.m; sourceTree = "<group>"; };
+		C7D0FBDC1AC546890021618D /* NTNUCameraCalibrationFactoryJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTNUCameraCalibrationFactoryJSON.h; sourceTree = "<group>"; };
+		C7D0FBDD1AC546890021618D /* NTNUCameraCalibrationFactoryJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTNUCameraCalibrationFactoryJSON.m; sourceTree = "<group>"; };
+		C7D0FBDE1AC546890021618D /* NTNUCameraCalibrationJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTNUCameraCalibrationJSON.h; sourceTree = "<group>"; };
+		C7D0FBDF1AC546890021618D /* NTNUCameraCalibrationJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTNUCameraCalibrationJSON.m; sourceTree = "<group>"; };
+		C7D0FBE21AC546890021618D /* NTNUDeviceCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTNUDeviceCamera.h; sourceTree = "<group>"; };
+		C7D0FBE31AC546890021618D /* NTNUDeviceCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTNUDeviceCamera.m; sourceTree = "<group>"; };
+		C7D0FBE41AC546890021618D /* NTNUDeviceCameraJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTNUDeviceCameraJSON.h; sourceTree = "<group>"; };
+		C7D0FBE51AC546890021618D /* NTNUDeviceCameraJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTNUDeviceCameraJSON.m; sourceTree = "<group>"; };
+		C7D0FBEA1AC546890021618D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C7D0FBEB1AC546890021618D /* TransformationType.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TransformationType.cpp; sourceTree = "<group>"; };
+		C7D0FBEC1AC546890021618D /* TransformationType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransformationType.h; sourceTree = "<group>"; };
+		C7D0FC041AC54D9B0021618D /* Framemarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Framemarker.h; sourceTree = "<group>"; };
+		C7D0FC051AC54D9B0021618D /* OARFramemarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OARFramemarker.h; sourceTree = "<group>"; };
+		C7D0FC061AC54D9B0021618D /* OARFramemarker.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OARFramemarker.mm; sourceTree = "<group>"; };
+		C7D0FC071AC54D9B0021618D /* OARFramemarkerJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OARFramemarkerJSON.h; sourceTree = "<group>"; };
+		C7D0FC081AC54D9B0021618D /* OARFramemarkerJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OARFramemarkerJSON.m; sourceTree = "<group>"; };
+		C7D0FC101AC553320021618D /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		C7D0FC111AC553320021618D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C7D0FC161AC553570021618D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		C7D0FC1F1AC556720021618D /* libVuforia.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libVuforia.a; path = OpenAR/libraries/vuforia/lib/arm/libVuforia.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +167,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7D0FC181AC553600021618D /* OpenGLES.framework in Frameworks */,
+				C7D0FC121AC553320021618D /* Accelerate.framework in Frameworks */,
+				C7D0FC131AC553320021618D /* AVFoundation.framework in Frameworks */,
+				C7D0FC201AC556720021618D /* libVuforia.a in Frameworks */,
 				EE3828C7F91A24DACD92B071 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,6 +186,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7D0FC171AC553570021618D /* OpenGLES.framework in Frameworks */,
+				C7D0FC141AC5533D0021618D /* Accelerate.framework in Frameworks */,
+				C7D0FC151AC5533D0021618D /* AVFoundation.framework in Frameworks */,
+				C7D0FC211AC5568A0021618D /* libVuforia.a in Frameworks */,
 				C7B10E251ABC34560020BFDB /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,11 +234,16 @@
 				C7B10DF91ABC2D370020BFDB /* OARAppDelegate.m */,
 				C7B10E1A1ABC32D50020BFDB /* OARLogger.h */,
 				C7B10E1B1ABC338B0020BFDB /* OARLogger.m */,
+				C7D0FBCF1AC544F80021618D /* OARLoggerCPP.h */,
+				C7D0FBD01AC545AE0021618D /* NSLogCPP.h */,
+				C7D0FBD11AC545AE0021618D /* NSLogCPP.mm */,
 				C7B10DFB1ABC2D370020BFDB /* OARViewController.h */,
 				C7B10DFC1ABC2D370020BFDB /* OARViewController.m */,
 				C7D0FBA91ABC5CE40021618D /* OARIntrinsicView.h */,
 				C7D0FBAA1ABC5CE40021618D /* OARIntrinsicView.m */,
 				C7B10E501ABC42D70020BFDB /* Categories */,
+				C7D0FBD41AC546890021618D /* Camera Calibration */,
+				C7D0FBAD1AC5447F0021618D /* Marker Detection */,
 				C7B10E481ABC414F0020BFDB /* Video */,
 				C7B10E301ABC3D8D0020BFDB /* Resources */,
 				C7B10E381ABC3D8D0020BFDB /* Supporting Files */,
@@ -225,9 +315,67 @@
 			path = Categories;
 			sourceTree = "<group>";
 		};
+		C7D0FBAD1AC5447F0021618D /* Marker Detection */ = {
+			isa = PBXGroup;
+			children = (
+				C7D0FC031AC54D9B0021618D /* FrameMarker */,
+				C7D0FBB31AC5447F0021618D /* NTNUMarkerDetectorBridge.h */,
+				C7D0FBB41AC5447F0021618D /* NTNUMarkerDetectorBridge.mm */,
+				C7D0FBB51AC5447F0021618D /* PACCameraCalibration.cpp */,
+				C7D0FBB61AC5447F0021618D /* PACCameraCalibration.h */,
+				C7D0FBB71AC5447F0021618D /* PACMarker.cpp */,
+				C7D0FBB81AC5447F0021618D /* PACMarker.h */,
+				C7D0FBB91AC5447F0021618D /* PACMarkerDetectionFacade.h */,
+				C7D0FBBA1AC5447F0021618D /* PACMarkerDetector.cpp */,
+				C7D0FBBB1AC5447F0021618D /* PACMarkerDetector.h */,
+				C7D0FBBC1AC5447F0021618D /* PACTinyLA.cpp */,
+				C7D0FBBD1AC5447F0021618D /* PACTinyLA.h */,
+				C7D0FBBE1AC5447F0021618D /* README.md */,
+			);
+			path = "Marker Detection";
+			sourceTree = "<group>";
+		};
+		C7D0FBD41AC546890021618D /* Camera Calibration */ = {
+			isa = PBXGroup;
+			children = (
+				C7D0FBD81AC546890021618D /* NTNUCameraCalibration.h */,
+				C7D0FBD91AC546890021618D /* NTNUCameraCalibration.m */,
+				C7D0FBDA1AC546890021618D /* NTNUCameraCalibrationFactory.h */,
+				C7D0FBDB1AC546890021618D /* NTNUCameraCalibrationFactory.m */,
+				C7D0FBDC1AC546890021618D /* NTNUCameraCalibrationFactoryJSON.h */,
+				C7D0FBDD1AC546890021618D /* NTNUCameraCalibrationFactoryJSON.m */,
+				C7D0FBDE1AC546890021618D /* NTNUCameraCalibrationJSON.h */,
+				C7D0FBDF1AC546890021618D /* NTNUCameraCalibrationJSON.m */,
+				C7D0FBE21AC546890021618D /* NTNUDeviceCamera.h */,
+				C7D0FBE31AC546890021618D /* NTNUDeviceCamera.m */,
+				C7D0FBE41AC546890021618D /* NTNUDeviceCameraJSON.h */,
+				C7D0FBE51AC546890021618D /* NTNUDeviceCameraJSON.m */,
+				C7D0FBEA1AC546890021618D /* README.md */,
+				C7D0FBEB1AC546890021618D /* TransformationType.cpp */,
+				C7D0FBEC1AC546890021618D /* TransformationType.h */,
+			);
+			path = "Camera Calibration";
+			sourceTree = "<group>";
+		};
+		C7D0FC031AC54D9B0021618D /* FrameMarker */ = {
+			isa = PBXGroup;
+			children = (
+				C7D0FC041AC54D9B0021618D /* Framemarker.h */,
+				C7D0FC051AC54D9B0021618D /* OARFramemarker.h */,
+				C7D0FC061AC54D9B0021618D /* OARFramemarker.mm */,
+				C7D0FC071AC54D9B0021618D /* OARFramemarkerJSON.h */,
+				C7D0FC081AC54D9B0021618D /* OARFramemarkerJSON.m */,
+			);
+			path = FrameMarker;
+			sourceTree = "<group>";
+		};
 		E00E59B897D911C831573024 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C7D0FC161AC553570021618D /* OpenGLES.framework */,
+				C7D0FC101AC553320021618D /* Accelerate.framework */,
+				C7D0FC111AC553320021618D /* AVFoundation.framework */,
+				C7D0FC1F1AC556720021618D /* libVuforia.a */,
 				05D07789987C8EF4AAF74FE0 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -428,15 +576,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7D0FC011AC546890021618D /* TransformationType.cpp in Sources */,
 				C7B10E4B1ABC41690020BFDB /* OARVideoSource.m in Sources */,
+				C7D0FBCB1AC5447F0021618D /* PACTinyLA.cpp in Sources */,
+				C7D0FBF91AC546890021618D /* NTNUDeviceCameraJSON.m in Sources */,
+				C7D0FC091AC54D9B0021618D /* OARFramemarker.mm in Sources */,
+				C7D0FBC71AC5447F0021618D /* PACMarker.cpp in Sources */,
 				C7B10E1C1ABC338B0020BFDB /* OARLogger.m in Sources */,
+				C7D0FBD21AC545AE0021618D /* NSLogCPP.mm in Sources */,
 				C7B10E531ABC42D70020BFDB /* UIDevice+Extensions.m in Sources */,
+				C7D0FBC51AC5447F0021618D /* PACCameraCalibration.cpp in Sources */,
+				C7D0FBEF1AC546890021618D /* NTNUCameraCalibration.m in Sources */,
+				C7D0FBF11AC546890021618D /* NTNUCameraCalibrationFactory.m in Sources */,
+				C7D0FBC91AC5447F0021618D /* PACMarkerDetector.cpp in Sources */,
+				C7D0FBF31AC546890021618D /* NTNUCameraCalibrationFactoryJSON.m in Sources */,
 				C7B10DFD1ABC2D370020BFDB /* OARViewController.m in Sources */,
 				C7B10E561ABC44A10020BFDB /* NSNumber+CVPixelFormatType.m in Sources */,
 				C7B10E3F1ABC3D8D0020BFDB /* main.m in Sources */,
 				C7B10E5E1ABC47310020BFDB /* UIImage+Checkerboard.m in Sources */,
 				C7D0FBAB1ABC5CE40021618D /* OARIntrinsicView.m in Sources */,
+				C7D0FBC31AC5447F0021618D /* NTNUMarkerDetectorBridge.mm in Sources */,
 				C7B10DFA1ABC2D370020BFDB /* OARAppDelegate.m in Sources */,
+				C7D0FBF71AC546890021618D /* NTNUDeviceCamera.m in Sources */,
+				C7D0FBF51AC546890021618D /* NTNUCameraCalibrationJSON.m in Sources */,
+				C7D0FC0B1AC54D9B0021618D /* OARFramemarkerJSON.m in Sources */,
 				C7B10E5C1ABC47310020BFDB /* NSString+CameraResolution.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -454,10 +617,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7D0FBAC1ABC5F230021618D /* OARIntrinsicView.m in Sources */,
+				C7D0FBC41AC5447F0021618D /* NTNUMarkerDetectorBridge.mm in Sources */,
+				C7D0FBC61AC5447F0021618D /* PACCameraCalibration.cpp in Sources */,
+				C7D0FBF81AC546890021618D /* NTNUDeviceCamera.m in Sources */,
+				C7D0FBCC1AC5447F0021618D /* PACTinyLA.cpp in Sources */,
+				C7D0FBF01AC546890021618D /* NTNUCameraCalibration.m in Sources */,
 				C7B10E4C1ABC416D0020BFDB /* OARVideoSource.m in Sources */,
 				C7B10E201ABC34560020BFDB /* OARLogger.m in Sources */,
+				C7D0FC021AC546890021618D /* TransformationType.cpp in Sources */,
+				C7D0FBF61AC546890021618D /* NTNUCameraCalibrationJSON.m in Sources */,
+				C7D0FC0A1AC54D9B0021618D /* OARFramemarker.mm in Sources */,
+				C7D0FBF21AC546890021618D /* NTNUCameraCalibrationFactory.m in Sources */,
+				C7D0FC0C1AC54D9B0021618D /* OARFramemarkerJSON.m in Sources */,
 				C7B10E5F1ABC47310020BFDB /* UIImage+Checkerboard.m in Sources */,
 				C7B10E211ABC34560020BFDB /* OARViewController.m in Sources */,
+				C7D0FBF41AC546890021618D /* NTNUCameraCalibrationFactoryJSON.m in Sources */,
+				C7D0FBD31AC545AE0021618D /* NSLogCPP.mm in Sources */,
+				C7D0FBCA1AC5447F0021618D /* PACMarkerDetector.cpp in Sources */,
+				C7D0FBC81AC5447F0021618D /* PACMarker.cpp in Sources */,
+				C7D0FBFA1AC546890021618D /* NTNUDeviceCameraJSON.m in Sources */,
 				C7B10E5D1ABC47310020BFDB /* NSString+CameraResolution.m in Sources */,
 				C7B10E401ABC3DB20020BFDB /* main.m in Sources */,
 				C7B10E571ABC44A40020BFDB /* NSNumber+CVPixelFormatType.m in Sources */,
@@ -529,6 +707,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/OpenAR/libraries/vuforia/include",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -564,6 +747,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/OpenAR/libraries/vuforia/include",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
@@ -578,6 +766,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "$(SRCROOT)/OpenAR/Resources/OpenAR-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenAR/External",
+					Libraries,
+					"$(PROJECT_DIR)/OpenAR/External",
+					Libraries/libVuforia/lib/arm,
+					"$(PROJECT_DIR)/OpenAR/libraries/vuforia/lib/arm",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -590,6 +786,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "$(SRCROOT)/OpenAR/Resources/OpenAR-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenAR/External",
+					Libraries,
+					"$(PROJECT_DIR)/OpenAR/External",
+					Libraries/libVuforia/lib/arm,
+					"$(PROJECT_DIR)/OpenAR/libraries/vuforia/lib/arm",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -640,6 +844,14 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/OpenAR/Resources/OpenAR Development-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenAR/External",
+					Libraries,
+					"$(PROJECT_DIR)/OpenAR/External",
+					Libraries/libVuforia/lib/arm,
+					"$(PROJECT_DIR)/OpenAR/libraries/vuforia/lib/arm",
+				);
 				PRODUCT_NAME = "OpenAR Development";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -656,6 +868,14 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/OpenAR/Resources/OpenAR Development-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenAR/External",
+					Libraries,
+					"$(PROJECT_DIR)/OpenAR/External",
+					Libraries/libVuforia/lib/arm,
+					"$(PROJECT_DIR)/OpenAR/libraries/vuforia/lib/arm",
+				);
 				PRODUCT_NAME = "OpenAR Development";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

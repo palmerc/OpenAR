@@ -8,8 +8,8 @@
 
 #import "NTNUCameraCalibrationJSON.h"
 
-#import "PACVideoSource.h"
-#import "NTNULogger.h"
+#import "OARVideoSource.h"
+#import "OARLogger.h"
 
 
 
@@ -20,7 +20,7 @@
 @property (assign, nonatomic, readwrite) CGFloat skew;
 @property (strong, nonatomic, readwrite) NSArray *distortionCoefficients;
 @property (strong, nonatomic, readwrite) NSString *descriptiveText;
-@property (assign, nonatomic, readwrite) NTNUCameraPosition position;
+@property (assign, nonatomic, readwrite) OARCameraPosition position;
 @property (strong, nonatomic, readwrite) NSString *device;
 @property (strong, nonatomic, readwrite) NSString *manufacturer;
 @property (assign, nonatomic, readwrite) CGSize nativeResolution;
@@ -184,13 +184,13 @@
     if ([sender isKindOfClass:[NSString class]]) {
         NSString *locationValue = sender;
 
-        NTNUCameraPosition position;
+        OARCameraPosition position;
         if ([locationValue isEqualToString:@"front"]) {
-            position = NTNUCameraPositionFront;
+            position = OARCameraPositionFront;
         } else if ([locationValue isEqualToString:@"rear"]) {
-            position = NTNUCameraPositionBack;
+            position = OARCameraPositionBack;
         } else {
-            position = NTNUCameraPositionUnknown;
+            position = OARCameraPositionUnknown;
         }
 
         self.position = position;
@@ -216,7 +216,7 @@
     }
 }
 
-- (void)setVideoSource:(PACVideoSource *)videoSource
+- (void)setVideoSource:(OARVideoSource *)videoSource
 {
     if (videoSource.isRunning) {
         CGSize cameraSize = videoSource.cameraSize;

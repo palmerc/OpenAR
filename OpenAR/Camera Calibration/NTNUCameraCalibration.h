@@ -9,8 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
 
-#import "NTNUCameraPosition.h"
-#import "NTNUCameraResolution.h"
+#import "OARCameraPosition.h"
+#import "OARCameraResolution.h"
 
 
 
@@ -23,7 +23,7 @@
 @property (assign, nonatomic, readonly) CGFloat skew;
 @property (strong, nonatomic, readonly) NSArray *distortionCoefficients;
 @property (strong, nonatomic, readonly) NSString *descriptiveText;
-@property (assign, nonatomic, readonly) NTNUCameraPosition position;
+@property (assign, nonatomic, readonly) OARCameraPosition position;
 @property (strong, nonatomic, readonly) NSString *device;
 @property (strong, nonatomic, readonly) NSString *manufacturer;
 @property (assign, nonatomic, readonly) CGSize nativeResolution;

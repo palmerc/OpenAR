@@ -1,18 +1,18 @@
 //
-//  NTNUFramemarkerJSON.m
+//  OARFramemarkerJSON.m
 //  SmartScan
 //
 //  Created by Cameron Palmer on 20.02.15.
 //  Copyright (c) 2015 NTNU. All rights reserved.
 //
 
-#import "NTNUFramemarkerJSON.h"
+#import "OARFramemarkerJSON.h"
 
-#import "NTNULogger.h"
+#import "OARLogger.h"
 
 
 
-@interface NTNUFramemarker ()
+@interface OARFramemarker ()
 @property (assign, nonatomic, readwrite) NSInteger markerIdentifier;
 @property (strong, nonatomic, readwrite) NSString *descriptiveText;
 @property (strong, nonatomic, readwrite) NSString *reference;
@@ -24,7 +24,7 @@
 
 
 
-@implementation NTNUFramemarkerJSON
+@implementation OARFramemarkerJSON
 
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary
 {

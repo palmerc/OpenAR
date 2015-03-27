@@ -12,6 +12,6 @@
 
 @interface NTNUCameraCalibrationFactoryJSON : NTNUCameraCalibrationFactory
 
-+ (NTNUCameraCalibration *)cameraCalibrationForVideoSource:(PACVideoSource *)videoSource;
++ (NTNUCameraCalibration *)cameraCalibrationForVideoSource:(OARVideoSource *)videoSource;
 
 @end

@@ -1,12 +1,12 @@
 //
-//  NTNUFramemarker.mm
-//  SmartScan
+//  OARFramemarker.mm
+//  OpenAR
 //
 //  Created by Cameron Palmer on 20.02.15.
 //  Copyright (c) 2015 NTNU. All rights reserved.
 //
 
-#import "NTNUFramemarker.h"
+#import "OARFramemarker.h"
 
 #import "Framemarker.h"
 
@@ -48,7 +48,7 @@ namespace ntnu
 
 
 
-@interface NTNUFramemarker ()
+@interface OARFramemarker ()
 @property (unsafe_unretained, nonatomic) std::shared_ptr<ntnu::Framemarker> framemarker;
 @property (assign, nonatomic, readwrite) NSInteger markerIdentifier;
 @property (strong, nonatomic, readwrite) NSString *descriptiveText;
@@ -61,7 +61,7 @@ namespace ntnu
 
 
 
-@implementation NTNUFramemarker
+@implementation OARFramemarker
 
 - (instancetype)init
 {
@@ -95,7 +95,7 @@ namespace ntnu
 
 - (void)setMarkerIdentifier:(NSInteger)markerIdentifier
 {
-    self.framemarker->markerIdentifier = markerIdentifier;
+    self.framemarker->markerIdentifier = (int)markerIdentifier;
 }
 
 - (NSInteger)markerIdentifier

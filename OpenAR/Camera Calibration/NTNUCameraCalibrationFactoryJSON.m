@@ -10,8 +10,8 @@
 
 #import "NTNUDeviceCameraJSON.h"
 #import "NTNUCameraCalibrationJSON.h"
-#import "PACVideoSource.h"
-#import "NTNULogger.h"
+#import "OARVideoSource.h"
+#import "OARLogger.h"
 
 static NSString *const kCameraCalibrationFile = @"camera_calibration.json";
 
@@ -19,7 +19,7 @@ static NSString *const kCameraCalibrationFile = @"camera_calibration.json";
 
 @implementation NTNUCameraCalibrationFactoryJSON
 
-+ (NTNUCameraCalibration *)cameraCalibrationForVideoSource:(PACVideoSource *)videoSource
++ (NTNUCameraCalibration *)cameraCalibrationForVideoSource:(OARVideoSource *)videoSource
 {
     NSDictionary *cameraCalibrationDictionary = [NTNUCameraCalibrationFactoryJSON cameraCalibrationDictionary];
     NSMutableDictionary *cameraDictionary = [NSMutableDictionary dictionaryWithCapacity:[cameraCalibrationDictionary count]];
@@ -31,8 +31,8 @@ static NSString *const kCameraCalibrationFile = @"camera_calibration.json";
     }
 
     NTNUCameraCalibration *currentCameraCalibration = nil;
-    NTNUCameraPosition cameraPosition = videoSource.cameraPosition;
-    if (cameraPosition != NTNUCameraPositionUnknown) {
+    OARCameraPosition cameraPosition = videoSource.cameraPosition;
+    if (cameraPosition != OARCameraPositionUnknown) {
         NSString *currentDeviceKey = [[UIDevice currentDevice] ntnu_deviceString];
         NSArray *cameraCalibrations = cameraDictionary[currentDeviceKey];
         for (NTNUCameraCalibrationJSON *cameraCalibration in cameraCalibrations) {

@@ -14,6 +14,8 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
++ (NSURL *)applicationDocumentURL;
++ (NSURL *)applicationLibraryURL;
 
 @end
 

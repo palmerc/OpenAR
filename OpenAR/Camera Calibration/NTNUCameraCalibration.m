@@ -17,7 +17,7 @@
 @property (assign, nonatomic, readwrite) CGFloat skew;
 @property (strong, nonatomic, readwrite) NSArray *distortionCoefficients;
 @property (strong, nonatomic, readwrite) NSString *descriptiveText;
-@property (assign, nonatomic, readwrite) NTNUCameraPosition position;
+@property (assign, nonatomic, readwrite) OARCameraPosition position;
 @property (strong, nonatomic, readwrite) NSString *device;
 @property (strong, nonatomic, readwrite) NSString *manufacturer;
 @property (assign, nonatomic, readwrite) CGSize nativeResolution;

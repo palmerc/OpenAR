@@ -1,13 +1,13 @@
 //
-//  NTNUFramemarkerImpl.h
-//  SmartScan
+//  Framemarker.h
+//  OpenAR
 //
 //  Created by Cameron Palmer on 21.02.15.
 //  Copyright (c) 2015 NTNU. All rights reserved.
 //
 
-#ifndef SmartScan_NTNUFramemarkerImpl_h
-#define SmartScan_NTNUFramemarkerImpl_h
+#ifndef OpenAR_Framemarker_h
+#define OpenAR_Framemarker_h
 
 #include <vector>
 #include <opencv2/opencv.hpp>

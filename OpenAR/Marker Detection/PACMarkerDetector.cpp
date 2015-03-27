@@ -11,11 +11,11 @@
 #include <CoreVideo/CoreVideo.h>
 #include <opencv2/core/core.hpp>
 
-#include "NTNUBasicVideoFrame.h"
+#include "OARBasicVideoFrame.h"
 #include "PACMarkerDetector.h"
 #include "PACMarker.h"
 #include "PACTinyLA.h"
-#include "vesLogger.h"
+#include "OARLoggerCPP.h"
 
 //#define MARKER_IMAGE_DUMP 1
 
@@ -77,7 +77,7 @@ PACMarkerDetector::PACMarkerDetector(std::shared_ptr<PACCameraCalibration> calib
 {
     _internal = new PACInternal();
 
-    SCLogDebug("%s", calibration->getDescription().c_str());
+    OARLogDebug("%s", calibration->getDescription().c_str());
 
     this->_internal->_cameraCalibration = calibration;
 }
@@ -118,7 +118,7 @@ void PACMarkerDetector::processVideoFrame(const cv::Mat &bgraFrame)
         comma = ", ";
     }
     buffer << "]" << std::endl;
-    SCLogVerbose("%s", buffer.str().c_str());
+    OARLogVerbose("%s", buffer.str().c_str());
 #endif
 }
 
@@ -252,7 +252,7 @@ void PACMarkerDetector::PACInternal::findContours(const cv::Mat &thresholdImage,
 
     contours.clear();
     for (size_t i = 0; i < allContours.size(); i++) {
-        int contourSize = allContours[i].size();
+        int contourSize = (int)allContours[i].size();
         if (contourSize > minContourPointsAllowed) {
             contours.push_back(allContours[i]);
         }
@@ -502,9 +502,9 @@ void PACMarkerDetector::PACInternal::estimatePosition(std::vector<PACMarker> &de
                 transformation(row, 3) = -translationVector(row);
             }
 
-            SSLogCVMat("Rotation Matrix", rotationMatrix);
-            SSLogCVMat("Translation Vector", translationVector);
-            SSLogCVMat("Transformation Matrix", transformation);
+            OARLogCVMat("Rotation Matrix", rotationMatrix);
+            OARLogCVMat("Translation Vector", translationVector);
+            OARLogCVMat("Transformation Matrix", transformation);
 
             detectedMarker.transformation = transformation;
         }

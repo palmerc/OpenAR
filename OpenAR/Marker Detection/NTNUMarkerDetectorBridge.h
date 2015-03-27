@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import "PACVideoSource.h"
+#import "OARVideoSource.h"
 
 @class NTNUCameraCalibration;
 
@@ -16,7 +16,7 @@
 
 
 
-@interface NTNUMarkerDetectorBridge : NSObject <PACVideoSourceDelegate>
+@interface NTNUMarkerDetectorBridge : NSObject <OARVideoSourceDelegate>
 
 - (instancetype)init;
 - (void)setCameraCalibration:(NTNUCameraCalibration *)cameraCalibration;

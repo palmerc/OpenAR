@@ -10,15 +10,15 @@
 
 #import "NTNUCameraCalibrationFactoryJSON.h"
 #import "NTNUCameraCalibration.h"
-#import "PACVideoSource.h"
-#import "UIDevice+NTNUExtensions.h"
-#import "NTNULogger.h"
+#import "OARVideoSource.h"
+#import "UIDevice+Extensions.h"
+#import "OARLogger.h"
 
 
 
 @implementation NTNUCameraCalibrationFactory
 
-+ (NTNUCameraCalibration *)cameraCalibrationForVideoSource:(PACVideoSource *)videoSource
++ (NTNUCameraCalibration *)cameraCalibrationForVideoSource:(OARVideoSource *)videoSource
 {
     NTNUCameraCalibration *cameraCalibration = nil;
     if (videoSource.isRunning) {        

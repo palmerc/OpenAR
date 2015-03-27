@@ -10,12 +10,12 @@
 
 #import "NTNUCameraCalibration.h"
 
-@class PACVideoSource;
+@class OARVideoSource;
 
 
 
 @interface NTNUCameraCalibrationJSON : NTNUCameraCalibration
-@property (weak, nonatomic) PACVideoSource *videoSource;
+@property (weak, nonatomic) OARVideoSource *videoSource;
 
 + (instancetype)cameraCalibrationWithDictionary:(NSDictionary *)dictionary;
 

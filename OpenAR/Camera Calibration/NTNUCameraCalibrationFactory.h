@@ -10,12 +10,12 @@
 #import <AVFoundation/AVFoundation.h>
 
 @class NTNUCameraCalibration;
-@class PACVideoSource;
+@class OARVideoSource;
 
 
 
 @interface NTNUCameraCalibrationFactory : NSObject
 
-+ (NTNUCameraCalibration *)cameraCalibrationForVideoSource:(PACVideoSource *)videoSource;
++ (NTNUCameraCalibration *)cameraCalibrationForVideoSource:(OARVideoSource *)videoSource;
 
 @end

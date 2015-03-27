@@ -214,10 +214,10 @@ static NSUInteger kFrameTimeBufferSize = 15;
             break;
     }
 
-    DDLogVerbose(@"Starting camera at position %ld", devicePosition);
+    DDLogVerbose(@"Starting camera at position %ld", (long)devicePosition);
     AVCaptureDevice *videoDevice = [self cameraWithPosition:devicePosition];
     if (videoDevice == nil) {
-        DDLogError(@"No device matching camera position - %ld", devicePosition);
+        DDLogError(@"No device matching camera position - %ld", (long)devicePosition);
     }
     DDLogVerbose(@"Device reported field of view as %.02f degrees", videoDevice.activeFormat.videoFieldOfView);
     self.videoDevice = videoDevice;

@@ -1,6 +1,6 @@
 //
 //  NTNUFramemarker.h
-//  SmartScan
+//  OpenAR
 //
 //  Created by Cameron Palmer on 20.02.15.
 //  Copyright (c) 2015 NTNU. All rights reserved.
@@ -12,7 +12,7 @@
 
 
 
-@interface NTNUFramemarker : NSObject
+@interface OARFramemarker : NSObject
 @property (unsafe_unretained, nonatomic, readonly) void *impl;
 @property (assign, nonatomic, readonly) NSInteger markerIdentifier;
 @property (strong, nonatomic, readonly) NSString *descriptiveText;
