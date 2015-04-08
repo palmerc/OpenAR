@@ -1,0 +1,42 @@
+[
+  {
+    "center_origin": true, 
+    "description": "Disco shoe", 
+    "enabled": true, 
+    "identifier": 213, 
+    "reference": "heart", 
+    "size": 50.0
+  }, 
+  {
+    "center_origin": true, 
+    "description": "Necklace", 
+    "enabled": true, 
+    "identifier": 777, 
+    "reference": "probe", 
+    "size": 50.0
+  }, 
+  {
+    "center_origin": true, 
+    "description": "Moose", 
+    "enabled": true, 
+    "identifier": 732, 
+    "reference": "echo_plane", 
+    "size": 50.0
+  }, 
+  {
+    "center_origin": true, 
+    "description": "Norway", 
+    "enabled": true, 
+    "identifier": 357, 
+    "reference": "left_ventricle", 
+    "size": 50.0
+  }, 
+  {
+    "center_origin": true, 
+    "description": "De Stijl", 
+    "enabled": true, 
+    "identifier": 337, 
+    "reference": "ntnu", 
+    "size": 50.0
+  }
+]
