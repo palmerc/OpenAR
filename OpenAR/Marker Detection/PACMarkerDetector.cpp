@@ -93,7 +93,7 @@ PACMarkerDetector::~PACMarkerDetector()
 
 void PACMarkerDetector::processVideoFrame(const cv::Mat &bgraFrame)
 {
-    TIME_START(VIDEOFRAME);
+    TIMER_START(VIDEOFRAME);
 
     std::vector<PACMarker> validMarkers;
     this->_internal->findMarkers(bgraFrame, validMarkers);
@@ -107,7 +107,7 @@ void PACMarkerDetector::processVideoFrame(const cv::Mat &bgraFrame)
         }
     }
 
-    TIME_END(VIDEOFRAME);
+    TIMER_END(VIDEOFRAME);
 
 #if defined(DEVELOPMENT)
     std::string comma = "";
@@ -175,7 +175,7 @@ bool PACMarkerDetector::PACInternal::findMarkers(const cv::Mat &grayscaleImage,
     cv::imwrite(_documentDirectory + "/markerd-original.jpg", bgrFrame);
 #endif
 
-    TIME_START(FIND_MARKERS);
+    TIMER_START(FIND_MARKERS);
     cv::Mat thresholdImage;
     performThreshold(grayscaleImage, thresholdImage);
     findContours(thresholdImage, contours, 64);
@@ -187,16 +187,16 @@ bool PACMarkerDetector::PACInternal::findMarkers(const cv::Mat &grayscaleImage,
 
     // sort by id
     std::sort(detectedMarkers.begin(), detectedMarkers.end());
-    TIME_END(FIND_MARKERS);
+    TIMER_END(FIND_MARKERS);
 
     return false;
 }
 
 void PACMarkerDetector::PACInternal::generateGrayscaleImage(const cv::Mat &bgraFrame, cv::Mat &grayscaleImage) const
 {
-    TIME_START(CV_GRAYSCALE);
+    TIMER_START(CV_GRAYSCALE);
     cv::cvtColor(bgraFrame, grayscaleImage, CV_BGRA2GRAY, CV_8UC1);
-    TIME_END(CV_GRAYSCALE);
+    TIMER_END(CV_GRAYSCALE);
 
 #if defined(MARKER_DEBUG)
     cv::imwrite(_documentDirectory + "/markerd-grayscale.jpg", grayscaleImage);
@@ -205,9 +205,9 @@ void PACMarkerDetector::PACInternal::generateGrayscaleImage(const cv::Mat &bgraF
 
 void PACMarkerDetector::PACInternal::equalizeHistogram(const cv::Mat &grayscaleImage, cv::Mat &equalizedImage) const
 {
-    TIME_START(CV_EQUALIZE_HISTOGRAM);
+    TIMER_START(CV_EQUALIZE_HISTOGRAM);
     cv::equalizeHist(grayscaleImage, equalizedImage);
-    TIME_END(CV_EQUALIZE_HISTOGRAM);
+    TIMER_END(CV_EQUALIZE_HISTOGRAM);
 
 #if defined(MARKER_DEBUG)
     cv::imwrite(_documentDirectory + "/markerd-histogram.jpg", grayscaleImage);
@@ -220,7 +220,7 @@ void PACMarkerDetector::PACInternal::performThreshold(const cv::Mat &originalIma
     int blockSize = 7;
     int maximumBinaryValue = 255;
 
-    TIME_START(CV_THRESHOLD);
+    TIMER_START(CV_THRESHOLD);
     // The original threshold function
 //    cv::threshold(originalImage, thresholdImage, thresholdValue, maximumBinaryValue, cv::THRESH_BINARY_INV);
 
@@ -234,7 +234,7 @@ void PACMarkerDetector::PACInternal::performThreshold(const cv::Mat &originalIma
                           cv::THRESH_BINARY_INV,
                           blockSize,
                           7);
-    TIME_END(CV_THRESHOLD);
+    TIMER_END(CV_THRESHOLD);
 
 #if defined(MARKER_IMAGE_DUMP)
     cv::imwrite(_documentDirectory + "/markerd-threshold.jpg", thresholdImage);
@@ -246,9 +246,9 @@ void PACMarkerDetector::PACInternal::findContours(const cv::Mat &thresholdImage,
                                   int minContourPointsAllowed) const
 {
     std::vector<std::vector<cv::Point>> allContours;
-    TIME_START(CV_FIND_CONTOURS);
+    TIMER_START(CV_FIND_CONTOURS);
     cv::findContours(thresholdImage, allContours, CV_RETR_LIST, CV_CHAIN_APPROX_NONE);
-    TIME_END(CV_FIND_CONTOURS);
+    TIMER_END(CV_FIND_CONTOURS);
 
     contours.clear();
     for (size_t i = 0; i < allContours.size(); i++) {
@@ -269,7 +269,7 @@ void PACMarkerDetector::PACInternal::findContours(const cv::Mat &thresholdImage,
 void PACMarkerDetector::PACInternal::findMarkerCandidates(const std::vector<std::vector<cv::Point>> &contours,
                                                           std::vector<PACMarker> &detectedMarkers) const
 {
-    TIME_START(MARKER_CANDIDATES);
+    TIMER_START(MARKER_CANDIDATES);
     std::vector<cv::Point> approxCurve;
     std::vector<PACMarker> possibleMarkers;
 
@@ -370,13 +370,13 @@ void PACMarkerDetector::PACInternal::findMarkerCandidates(const std::vector<std:
             detectedMarkers.push_back(possibleMarkers[i]);
         }
     }
-    TIME_END(MARKER_CANDIDATES);
+    TIMER_END(MARKER_CANDIDATES);
 }
 
 void PACMarkerDetector::PACInternal::detectMarkers(const cv::Mat& grayscaleMarkerScene,
                                                    std::vector<PACMarker> &detectedMarkers) const
 {
-    TIME_START(DETECT_MARKERS);
+    TIMER_START(DETECT_MARKERS);
     std::vector<PACMarker> validMarkers;
     // Identify the markers
     for (size_t i = 0; i < detectedMarkers.size(); i++) {
@@ -451,13 +451,13 @@ void PACMarkerDetector::PACInternal::detectMarkers(const cv::Mat& grayscaleMarke
 
     detectedMarkers = validMarkers;
 
-    TIME_END(DETECT_MARKERS);
+    TIMER_END(DETECT_MARKERS);
 }
 
 
 void PACMarkerDetector::PACInternal::estimatePosition(std::vector<PACMarker> &detectedMarkers) const
 {
-    TIME_START(ESTIMATE_POSITION);
+    TIMER_START(ESTIMATE_POSITION);
     cv::Mat cameraMatrix = _cameraCalibration->getIntrinsic();
     cv::Mat distortionCoefficients = _cameraCalibration->getDistortion();
 
@@ -509,7 +509,7 @@ void PACMarkerDetector::PACInternal::estimatePosition(std::vector<PACMarker> &de
             detectedMarker.transformation = transformation;
         }
     }
-    TIME_END(ESTIMATE_POSITION);
+    TIMER_END(ESTIMATE_POSITION);
 }
 
 std::vector<cv::Point2f> PACMarkerDetector::PACInternal::markerCornersFromSize(const cv::Size &size) const
