@@ -8,6 +8,23 @@
 
 #import "OARMarkerDetectorResult.h"
 
+
+
 @implementation OARMarkerDetectorResult
+
++ (instancetype)markerDetectorResultWithFramemarker:(OARFramemarker *)framemarker
+{
+    return [[[self class] alloc] initWithFramemarker:framemarker];
+}
+
+- (instancetype)initWithFramemarker:(OARFramemarker *)framemarker
+{
+    self = [super init];
+    if (self) {
+        _framemarker = framemarker;
+    }
+
+    return self;
+}
 
 @end
