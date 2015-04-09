@@ -99,6 +99,16 @@ Eigen::Transform<float, 3, Eigen::Affine> eigenTransformWithQCARMatrix34f(const 
     return Eigen::Transform<float, 3, Eigen::Affine>(translation * rotation);
 }
 
+matrix_float4x3 simdMatrixWithQCARMatrix34F(const QCAR::Matrix34F &matrix)
+{
+    vector_float3 col0 = { matrix.data[0], matrix.data[4], matrix.data[8] };
+    vector_float3 col1 = { matrix.data[1], matrix.data[5], matrix.data[9] };
+    vector_float3 col2 = { matrix.data[2], matrix.data[6], matrix.data[10] };
+    vector_float3 col3 = { matrix.data[3], matrix.data[7], matrix.data[11] };
+
+    return matrix_from_columns(col0, col1, col2, col3);
+}
+
 matrix_float4x4 simdMatrixWithQCARMatrix44f(const QCAR::Matrix44F &matrix)
 {
     vector_float4 col0 = { matrix.data[0], matrix.data[1], matrix.data[2], matrix.data[3] };

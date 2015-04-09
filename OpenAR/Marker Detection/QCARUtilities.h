@@ -22,6 +22,7 @@ CGImageRef CGImageCreateWithQCARImage(const QCAR::Image *image);
 Eigen::Transform<float, 3, Eigen::Affine> eigenTransformWithQCARMatrix34f(const QCAR::Matrix34F &matrix);
 Eigen::Matrix4f eigenMatrixWithQCARMatrix44f(const QCAR::Matrix44F &matrix);
 
+matrix_float4x3 simdMatrixWithQCARMatrix34F(const QCAR::Matrix34F &matrix);
 matrix_float4x4 simdMatrixWithQCARMatrix44f(const QCAR::Matrix44F &matrix);
 
 #endif /* defined(__OpenAR__QCARUtilities__) */
