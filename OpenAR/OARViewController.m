@@ -10,13 +10,17 @@
 
 #import <ImageIO/ImageIO.h>
 
-#import "OARVideoSource.h"
+#import "OARMarkerDetector.h"
+#import "OARFramemarkerJSON.h"
+#import "OARLogger.h"
+
+static NSString *const kFramemarkerCatalog = @"markers.json";
 
 
 
-@interface OARViewController () <OARVideoSourceDelegate>
+@interface OARViewController () <OARMarkerDetectorDelegate>
+@property (strong, nonatomic) OARMarkerDetector *markerDetector;
 @property (assign, nonatomic) CGFloat scalingFactor;
-@property (strong, nonatomic) OARVideoSource *videoSource;
 @property (assign, nonatomic) OARCameraPosition cameraPosition;
 @property (assign, nonatomic) OARCameraResolution cameraResolution;
 @property (assign, nonatomic, getter=isBackgroundFullScreen) BOOL backgroundFillScreen;
@@ -31,12 +35,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.videoSource = [[OARVideoSource alloc] init];
-    self.cameraResolution = OARCameraResolutionVGA;
-    self.cameraPosition = OARCameraPositionBack;
-    self.backgroundFillScreen = NO;
-    [self.videoSource addObserver:self];
-    [self.videoSource startVideoSource];
+    OARMarkerDetector *markerDetector = [[OARMarkerDetector alloc] init];
+    markerDetector.delegate = self;
+//    [markerDetector start];
+    self.markerDetector = markerDetector;
+
+//    self.videoSource = [[OARVideoSource alloc] init];
+//    self.cameraResolution = OARCameraResolutionVGA;
+//    self.cameraPosition = OARCameraPositionBack;
+//    self.backgroundFillScreen = NO;
+//    [self.videoSource addObserver:self];
+//    [self.videoSource startVideoSource];
 }
 
 - (void)didUpdateCameraSize:(CGSize)cameraSize
@@ -67,6 +76,47 @@
 }
 
 
+#pragma mark - 
+
+- (void)didStartMarkerDetector:(OARMarkerDetector *)markerDetector
+{
+    [markerDetector startCameraWithPosition:self.cameraPosition resolution:self.cameraResolution];
+}
+
+- (void)didPauseMarkerDetector:(OARMarkerDetector *)markerDetector
+{
+    DDLogDebug(@"%s", __PRETTY_FUNCTION__);
+}
+
+- (void)didResumeMarkerDetector:(OARMarkerDetector *)markerDetector
+{
+    DDLogDebug(@"%s", __PRETTY_FUNCTION__);
+}
+
+- (void)didStartCameraWithPosition:(OARCameraPosition)cameraPosition resolution:(OARCameraResolution)resolution
+{
+    [self.markerDetector startTrackingFramemarkers:[self framemarkersCatalog]];
+}
+
+- (void)didStopCamera
+{
+    DDLogDebug(@"%s", __PRETTY_FUNCTION__);
+}
+
+- (void)didStartTrackingForFramemarkers:(NSArray *)framemarkers
+{
+    DDLogDebug(@"%s", __PRETTY_FUNCTION__);
+}
+
+- (void)didUpdateCameraImages:(NSArray *)cameraImages
+{
+    DDLogVerbose(@"Received %d images.", [cameraImages count]);
+}
+
+- (void)didUpdateMarkerDetectorResults:(NSArray *)framemarkers
+{
+    DDLogVerbose(@"Received %d results.", [framemarkers count]);
+}
 
 #pragma mark - OARVideoSourceDelegate methods
 
@@ -92,7 +142,7 @@
 {
     UIViewAnimationOptions animation;
     OARCameraPosition position = OARCameraPositionUnknown;
-    switch (self.videoSource.cameraPosition) {
+    switch (self.cameraPosition) {
         case OARCameraPositionFront:
             animation = UIViewAnimationOptionTransitionFlipFromRight;
             position = OARCameraPositionBack;
@@ -141,16 +191,6 @@
     _backgroundFillScreen = backgroundFillScreen;
 }
 
-- (OARCameraPosition)cameraPosition
-{
-    return self.videoSource.cameraPosition;
-}
-
-- (void)setCameraPosition:(OARCameraPosition)position
-{
-    self.videoSource.cameraPosition = position;
-}
-
 - (void)setCameraResolution:(OARCameraResolution)cameraResolution
 {
     _cameraResolution = cameraResolution;
@@ -172,8 +212,6 @@
     }
 
     [self.cameraResolutionButtonItem setTitle:cameraResolutionText];
-
-    self.videoSource.cameraResolution = cameraResolution;
 }
 
 
@@ -186,25 +224,49 @@
 
 - (OARCameraResolution)nextValidCameraResolution
 {
-    OARCameraResolution cameraResolutions = [self.videoSource availableCameraResolutions];
-    OARCameraResolution nextResolution = self.cameraResolution;
-    if (self.cameraResolution > log2f(cameraResolutions)) {
-        nextResolution = 0;
+//    OARCameraResolution cameraResolutions = [self.videoSource availableCameraResolutions];
+//    OARCameraResolution nextResolution = self.cameraResolution;
+//    if (self.cameraResolution > log2f(cameraResolutions)) {
+//        nextResolution = 0;
+//    }
+//
+//    for (int i = 0; i < cameraResolutions; i++) {
+//        int value = 1 << i;
+//        if (value <= nextResolution) {
+//            continue;
+//        }
+//
+//        if (cameraResolutions && value) {
+//            nextResolution = value;
+//            break;
+//        }
+//    }
+//
+//    return nextResolution;
+    return OARCameraResolutionUnknown;
+}
+
+- (NSArray *)framemarkersCatalog
+{
+    NSString *filename = [kFramemarkerCatalog stringByDeletingPathExtension];
+    NSString *extension = [kFramemarkerCatalog pathExtension];
+
+    NSURL *framemarkerCatalogURL = [[NSBundle mainBundle] URLForResource:filename withExtension:extension];
+    NSData *framemarkerCatalogData = [NSData dataWithContentsOfURL:framemarkerCatalogURL];
+
+    NSError *error;
+    NSArray *framemarkerCatalog = [NSJSONSerialization JSONObjectWithData:framemarkerCatalogData options:NSJSONReadingAllowFragments error:&error];
+    if (error != nil) {
+        DDLogError(@"%@", error);
     }
 
-    for (int i = 0; i < cameraResolutions; i++) {
-        int value = 1 << i;
-        if (value <= nextResolution) {
-            continue;
-        }
-
-        if (cameraResolutions && value) {
-            nextResolution = value;
-            break;
-        }
+    NSMutableArray *framemarkers = [[NSMutableArray alloc] initWithCapacity:[framemarkerCatalog count]];
+    for (NSDictionary *framemarkerData in framemarkerCatalog) {
+        OARFramemarker *framemarker = [[OARFramemarkerJSON alloc] initWithDictionary:framemarkerData];
+        [framemarkers addObject:framemarker];
     }
 
-    return nextResolution;
+    return [framemarkers copy];
 }
 
 @end
