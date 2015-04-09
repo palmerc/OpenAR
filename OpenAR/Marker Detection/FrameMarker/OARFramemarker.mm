@@ -89,6 +89,11 @@ namespace ntnu
     return static_cast<void *>(self.framemarker.get());
 }
 
+- (NSString *)description
+{
+    return [NSString stringWithFormat:@"<%@: %p> Marker %d, size: %.1f, <<%@>>", NSStringFromClass([self class]), (id)self, self.markerIdentifier, self.size, self.descriptiveText];
+}
+
 
 
 #pragma mark - C++ object Getters and Setters

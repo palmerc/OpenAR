@@ -14,6 +14,7 @@
 
 @interface OARFramemarker : NSObject
 @property (unsafe_unretained, nonatomic, readonly) void *impl;
+
 @property (assign, nonatomic, readonly) NSInteger markerIdentifier;
 @property (strong, nonatomic, readonly) NSString *descriptiveText;
 @property (strong, nonatomic, readonly) NSString *reference;
