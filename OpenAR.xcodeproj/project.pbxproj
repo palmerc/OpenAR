@@ -7,11 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C71256A41AD6BF3600EE9DC8 /* OARMarkerDetectorResult.m in Sources */ = {isa = PBXBuildFile; fileRef = C71256A31AD6BF3600EE9DC8 /* OARMarkerDetectorResult.m */; };
+		C71256A51AD6BF3600EE9DC8 /* OARMarkerDetectorResult.m in Sources */ = {isa = PBXBuildFile; fileRef = C71256A31AD6BF3600EE9DC8 /* OARMarkerDetectorResult.m */; };
+		C71B53381AC5749E00DFE01D /* libVuforia.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C71B53371AC5749E00DFE01D /* libVuforia.a */; };
+		C725362E1AD29E0000F4103F /* markers.json in Resources */ = {isa = PBXBuildFile; fileRef = C725362D1AD29E0000F4103F /* markers.json */; };
+		C725362F1AD29E0000F4103F /* markers.json in Resources */ = {isa = PBXBuildFile; fileRef = C725362D1AD29E0000F4103F /* markers.json */; };
+		C72536361AD515B700F4103F /* NSLogCPP.mm in Sources */ = {isa = PBXBuildFile; fileRef = C72536321AD515B700F4103F /* NSLogCPP.mm */; };
+		C72536371AD515B700F4103F /* NSLogCPP.mm in Sources */ = {isa = PBXBuildFile; fileRef = C72536321AD515B700F4103F /* NSLogCPP.mm */; };
+		C72536381AD515B700F4103F /* OARLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = C72536341AD515B700F4103F /* OARLogger.m */; };
+		C72536391AD515B700F4103F /* OARLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = C72536341AD515B700F4103F /* OARLogger.m */; };
+		C725363C1AD51DED00F4103F /* QCARUtilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C725363A1AD51DED00F4103F /* QCARUtilities.cpp */; };
+		C725363D1AD51DED00F4103F /* QCARUtilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C725363A1AD51DED00F4103F /* QCARUtilities.cpp */; };
+		C725363F1AD5307000F4103F /* vuforia-license.json in Resources */ = {isa = PBXBuildFile; fileRef = C725363E1AD5307000F4103F /* vuforia-license.json */; };
+		C72536401AD5307000F4103F /* vuforia-license.json in Resources */ = {isa = PBXBuildFile; fileRef = C725363E1AD5307000F4103F /* vuforia-license.json */; };
+		C7AA9BD51AC574D300BCD23B /* libVuforia.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C71B53371AC5749E00DFE01D /* libVuforia.a */; };
+		C7AA9BD71AC57C8200BCD23B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7AA9BD61AC57C8200BCD23B /* CoreMotion.framework */; };
+		C7AA9BD91AC57C9900BCD23B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7AA9BD81AC57C9900BCD23B /* SystemConfiguration.framework */; };
+		C7AA9BDA1AC57CB300BCD23B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7AA9BD61AC57C8200BCD23B /* CoreMotion.framework */; };
+		C7AA9BDB1AC57CC000BCD23B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7AA9BD81AC57C9900BCD23B /* SystemConfiguration.framework */; };
 		C7B10DFA1ABC2D370020BFDB /* OARAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B10DF91ABC2D370020BFDB /* OARAppDelegate.m */; };
 		C7B10DFD1ABC2D370020BFDB /* OARViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B10DFC1ABC2D370020BFDB /* OARViewController.m */; };
 		C7B10E111ABC2D370020BFDB /* OpenARTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B10E101ABC2D370020BFDB /* OpenARTests.m */; };
-		C7B10E1C1ABC338B0020BFDB /* OARLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B10E1B1ABC338B0020BFDB /* OARLogger.m */; };
-		C7B10E201ABC34560020BFDB /* OARLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B10E1B1ABC338B0020BFDB /* OARLogger.m */; };
 		C7B10E211ABC34560020BFDB /* OARViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B10DFC1ABC2D370020BFDB /* OARViewController.m */; };
 		C7B10E221ABC34560020BFDB /* OARAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B10DF91ABC2D370020BFDB /* OARAppDelegate.m */; };
 		C7B10E251ABC34560020BFDB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D07789987C8EF4AAF74FE0 /* libPods.a */; };
@@ -44,8 +60,6 @@
 		C7D0FBCA1AC5447F0021618D /* PACMarkerDetector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7D0FBBA1AC5447F0021618D /* PACMarkerDetector.cpp */; };
 		C7D0FBCB1AC5447F0021618D /* PACTinyLA.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7D0FBBC1AC5447F0021618D /* PACTinyLA.cpp */; };
 		C7D0FBCC1AC5447F0021618D /* PACTinyLA.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7D0FBBC1AC5447F0021618D /* PACTinyLA.cpp */; };
-		C7D0FBD21AC545AE0021618D /* NSLogCPP.mm in Sources */ = {isa = PBXBuildFile; fileRef = C7D0FBD11AC545AE0021618D /* NSLogCPP.mm */; };
-		C7D0FBD31AC545AE0021618D /* NSLogCPP.mm in Sources */ = {isa = PBXBuildFile; fileRef = C7D0FBD11AC545AE0021618D /* NSLogCPP.mm */; };
 		C7D0FBEF1AC546890021618D /* NTNUCameraCalibration.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D0FBD91AC546890021618D /* NTNUCameraCalibration.m */; };
 		C7D0FBF01AC546890021618D /* NTNUCameraCalibration.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D0FBD91AC546890021618D /* NTNUCameraCalibration.m */; };
 		C7D0FBF11AC546890021618D /* NTNUCameraCalibrationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D0FBDB1AC546890021618D /* NTNUCameraCalibrationFactory.m */; };
@@ -70,8 +84,10 @@
 		C7D0FC151AC5533D0021618D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7D0FC111AC553320021618D /* AVFoundation.framework */; };
 		C7D0FC171AC553570021618D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7D0FC161AC553570021618D /* OpenGLES.framework */; };
 		C7D0FC181AC553600021618D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7D0FC161AC553570021618D /* OpenGLES.framework */; };
-		C7D0FC201AC556720021618D /* libVuforia.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7D0FC1F1AC556720021618D /* libVuforia.a */; };
-		C7D0FC211AC5568A0021618D /* libVuforia.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7D0FC1F1AC556720021618D /* libVuforia.a */; };
+		C7D0FC241AC56BEC0021618D /* OARMarkerDetectorFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D0FC231AC56BEC0021618D /* OARMarkerDetectorFactory.m */; };
+		C7D0FC251AC56BEC0021618D /* OARMarkerDetectorFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D0FC231AC56BEC0021618D /* OARMarkerDetectorFactory.m */; };
+		C7D0FC281AC56CCF0021618D /* OARMarkerDetector.mm in Sources */ = {isa = PBXBuildFile; fileRef = C7D0FC271AC56CCF0021618D /* OARMarkerDetector.mm */; };
+		C7D0FC291AC56CCF0021618D /* OARMarkerDetector.mm in Sources */ = {isa = PBXBuildFile; fileRef = C7D0FC271AC56CCF0021618D /* OARMarkerDetector.mm */; };
 		EE3828C7F91A24DACD92B071 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D07789987C8EF4AAF74FE0 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +105,23 @@
 		05D07789987C8EF4AAF74FE0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		0662252C111B9520A1365D4A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		67BA103F224BBE5502DC10E2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		C71256A21AD6BF3600EE9DC8 /* OARMarkerDetectorResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OARMarkerDetectorResult.h; sourceTree = "<group>"; };
+		C71256A31AD6BF3600EE9DC8 /* OARMarkerDetectorResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OARMarkerDetectorResult.m; sourceTree = "<group>"; };
+		C71B53371AC5749E00DFE01D /* libVuforia.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libVuforia.a; path = Libraries/Vuforia/lib/arm/libVuforia.a; sourceTree = "<group>"; };
+		C725362D1AD29E0000F4103F /* markers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = markers.json; sourceTree = "<group>"; };
+		C72536311AD515B700F4103F /* NSLogCPP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSLogCPP.h; sourceTree = "<group>"; };
+		C72536321AD515B700F4103F /* NSLogCPP.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NSLogCPP.mm; sourceTree = "<group>"; };
+		C72536331AD515B700F4103F /* OARLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OARLogger.h; sourceTree = "<group>"; };
+		C72536341AD515B700F4103F /* OARLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OARLogger.m; sourceTree = "<group>"; };
+		C72536351AD515B700F4103F /* OARLoggerCPP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OARLoggerCPP.h; sourceTree = "<group>"; };
+		C725363A1AD51DED00F4103F /* QCARUtilities.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QCARUtilities.cpp; sourceTree = "<group>"; };
+		C725363B1AD51DED00F4103F /* QCARUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCARUtilities.h; sourceTree = "<group>"; };
+		C725363E1AD5307000F4103F /* vuforia-license.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "vuforia-license.json"; sourceTree = "<group>"; };
+		C7718CD11ACED5C000892BB7 /* OARCameraAutofocusMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OARCameraAutofocusMode.h; sourceTree = "<group>"; };
+		C7718CD21ACED75A00892BB7 /* OARCameraImageFormat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OARCameraImageFormat.h; sourceTree = "<group>"; };
+		C7AA9BD61AC57C8200BCD23B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		C7AA9BD81AC57C9900BCD23B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C7AA9BDC1AC6FCFE00BCD23B /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		C7B10DF11ABC2D370020BFDB /* OpenAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7B10DF81ABC2D370020BFDB /* OARAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OARAppDelegate.h; sourceTree = "<group>"; };
 		C7B10DF91ABC2D370020BFDB /* OARAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OARAppDelegate.m; sourceTree = "<group>"; };
@@ -97,8 +130,6 @@
 		C7B10E0A1ABC2D370020BFDB /* OpenARTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenARTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7B10E0F1ABC2D370020BFDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7B10E101ABC2D370020BFDB /* OpenARTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenARTests.m; sourceTree = "<group>"; };
-		C7B10E1A1ABC32D50020BFDB /* OARLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OARLogger.h; sourceTree = "<group>"; };
-		C7B10E1B1ABC338B0020BFDB /* OARLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OARLogger.m; sourceTree = "<group>"; };
 		C7B10E2E1ABC34560020BFDB /* OpenAR Development.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OpenAR Development.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7B10E321ABC3D8D0020BFDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		C7B10E341ABC3D8D0020BFDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -133,9 +164,6 @@
 		C7D0FBBC1AC5447F0021618D /* PACTinyLA.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PACTinyLA.cpp; sourceTree = "<group>"; };
 		C7D0FBBD1AC5447F0021618D /* PACTinyLA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PACTinyLA.h; sourceTree = "<group>"; };
 		C7D0FBBE1AC5447F0021618D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		C7D0FBCF1AC544F80021618D /* OARLoggerCPP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OARLoggerCPP.h; sourceTree = "<group>"; };
-		C7D0FBD01AC545AE0021618D /* NSLogCPP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSLogCPP.h; sourceTree = "<group>"; };
-		C7D0FBD11AC545AE0021618D /* NSLogCPP.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NSLogCPP.mm; sourceTree = "<group>"; };
 		C7D0FBD81AC546890021618D /* NTNUCameraCalibration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTNUCameraCalibration.h; sourceTree = "<group>"; };
 		C7D0FBD91AC546890021618D /* NTNUCameraCalibration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTNUCameraCalibration.m; sourceTree = "<group>"; };
 		C7D0FBDA1AC546890021618D /* NTNUCameraCalibrationFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTNUCameraCalibrationFactory.h; sourceTree = "<group>"; };
@@ -159,7 +187,10 @@
 		C7D0FC101AC553320021618D /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		C7D0FC111AC553320021618D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C7D0FC161AC553570021618D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
-		C7D0FC1F1AC556720021618D /* libVuforia.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libVuforia.a; path = OpenAR/libraries/vuforia/lib/arm/libVuforia.a; sourceTree = "<group>"; };
+		C7D0FC221AC56BEC0021618D /* OARMarkerDetectorFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OARMarkerDetectorFactory.h; sourceTree = "<group>"; };
+		C7D0FC231AC56BEC0021618D /* OARMarkerDetectorFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OARMarkerDetectorFactory.m; sourceTree = "<group>"; };
+		C7D0FC261AC56CCF0021618D /* OARMarkerDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OARMarkerDetector.h; sourceTree = "<group>"; };
+		C7D0FC271AC56CCF0021618D /* OARMarkerDetector.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OARMarkerDetector.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,10 +198,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7AA9BD91AC57C9900BCD23B /* SystemConfiguration.framework in Frameworks */,
+				C7AA9BD71AC57C8200BCD23B /* CoreMotion.framework in Frameworks */,
 				C7D0FC181AC553600021618D /* OpenGLES.framework in Frameworks */,
 				C7D0FC121AC553320021618D /* Accelerate.framework in Frameworks */,
 				C7D0FC131AC553320021618D /* AVFoundation.framework in Frameworks */,
-				C7D0FC201AC556720021618D /* libVuforia.a in Frameworks */,
+				C71B53381AC5749E00DFE01D /* libVuforia.a in Frameworks */,
 				EE3828C7F91A24DACD92B071 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -186,10 +219,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7AA9BDB1AC57CC000BCD23B /* SystemConfiguration.framework in Frameworks */,
+				C7AA9BDA1AC57CB300BCD23B /* CoreMotion.framework in Frameworks */,
 				C7D0FC171AC553570021618D /* OpenGLES.framework in Frameworks */,
 				C7D0FC141AC5533D0021618D /* Accelerate.framework in Frameworks */,
 				C7D0FC151AC5533D0021618D /* AVFoundation.framework in Frameworks */,
-				C7D0FC211AC5568A0021618D /* libVuforia.a in Frameworks */,
+				C7AA9BD51AC574D300BCD23B /* libVuforia.a in Frameworks */,
 				C7B10E251ABC34560020BFDB /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,6 +239,19 @@
 				0662252C111B9520A1365D4A /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		C72536301AD515B700F4103F /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				C72536311AD515B700F4103F /* NSLogCPP.h */,
+				C72536321AD515B700F4103F /* NSLogCPP.mm */,
+				C72536331AD515B700F4103F /* OARLogger.h */,
+				C72536341AD515B700F4103F /* OARLogger.m */,
+				C72536351AD515B700F4103F /* OARLoggerCPP.h */,
+			);
+			name = Logging;
+			path = "Camera Calibration/Logging";
 			sourceTree = "<group>";
 		};
 		C7B10DE81ABC2D370020BFDB = {
@@ -232,16 +280,12 @@
 			children = (
 				C7B10DF81ABC2D370020BFDB /* OARAppDelegate.h */,
 				C7B10DF91ABC2D370020BFDB /* OARAppDelegate.m */,
-				C7B10E1A1ABC32D50020BFDB /* OARLogger.h */,
-				C7B10E1B1ABC338B0020BFDB /* OARLogger.m */,
-				C7D0FBCF1AC544F80021618D /* OARLoggerCPP.h */,
-				C7D0FBD01AC545AE0021618D /* NSLogCPP.h */,
-				C7D0FBD11AC545AE0021618D /* NSLogCPP.mm */,
 				C7B10DFB1ABC2D370020BFDB /* OARViewController.h */,
 				C7B10DFC1ABC2D370020BFDB /* OARViewController.m */,
 				C7D0FBA91ABC5CE40021618D /* OARIntrinsicView.h */,
 				C7D0FBAA1ABC5CE40021618D /* OARIntrinsicView.m */,
 				C7B10E501ABC42D70020BFDB /* Categories */,
+				C72536301AD515B700F4103F /* Logging */,
 				C7D0FBD41AC546890021618D /* Camera Calibration */,
 				C7D0FBAD1AC5447F0021618D /* Marker Detection */,
 				C7B10E481ABC414F0020BFDB /* Video */,
@@ -271,6 +315,8 @@
 		C7B10E301ABC3D8D0020BFDB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C725363E1AD5307000F4103F /* vuforia-license.json */,
+				C725362D1AD29E0000F4103F /* markers.json */,
 				C7B10E311ABC3D8D0020BFDB /* LaunchScreen.xib */,
 				C7B10E331ABC3D8D0020BFDB /* Main.storyboard */,
 				C7B10E351ABC3D8D0020BFDB /* Images.xcassets */,
@@ -296,6 +342,8 @@
 				C7B10E4D1ABC41820020BFDB /* OARBasicVideoFrame.h */,
 				C7B10E4E1ABC41E80020BFDB /* OARCameraResolution.h */,
 				C7B10E4F1ABC42310020BFDB /* OARCameraPosition.h */,
+				C7718CD21ACED75A00892BB7 /* OARCameraImageFormat.h */,
+				C7718CD11ACED5C000892BB7 /* OARCameraAutofocusMode.h */,
 			);
 			path = Video;
 			sourceTree = "<group>";
@@ -319,6 +367,12 @@
 			isa = PBXGroup;
 			children = (
 				C7D0FC031AC54D9B0021618D /* FrameMarker */,
+				C7D0FC221AC56BEC0021618D /* OARMarkerDetectorFactory.h */,
+				C7D0FC231AC56BEC0021618D /* OARMarkerDetectorFactory.m */,
+				C7D0FC261AC56CCF0021618D /* OARMarkerDetector.h */,
+				C7D0FC271AC56CCF0021618D /* OARMarkerDetector.mm */,
+				C71256A21AD6BF3600EE9DC8 /* OARMarkerDetectorResult.h */,
+				C71256A31AD6BF3600EE9DC8 /* OARMarkerDetectorResult.m */,
 				C7D0FBB31AC5447F0021618D /* NTNUMarkerDetectorBridge.h */,
 				C7D0FBB41AC5447F0021618D /* NTNUMarkerDetectorBridge.mm */,
 				C7D0FBB51AC5447F0021618D /* PACCameraCalibration.cpp */,
@@ -331,6 +385,8 @@
 				C7D0FBBC1AC5447F0021618D /* PACTinyLA.cpp */,
 				C7D0FBBD1AC5447F0021618D /* PACTinyLA.h */,
 				C7D0FBBE1AC5447F0021618D /* README.md */,
+				C725363A1AD51DED00F4103F /* QCARUtilities.cpp */,
+				C725363B1AD51DED00F4103F /* QCARUtilities.h */,
 			);
 			path = "Marker Detection";
 			sourceTree = "<group>";
@@ -372,10 +428,13 @@
 		E00E59B897D911C831573024 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C7AA9BDC1AC6FCFE00BCD23B /* libstdc++.dylib */,
+				C7AA9BD81AC57C9900BCD23B /* SystemConfiguration.framework */,
+				C7AA9BD61AC57C8200BCD23B /* CoreMotion.framework */,
+				C71B53371AC5749E00DFE01D /* libVuforia.a */,
 				C7D0FC161AC553570021618D /* OpenGLES.framework */,
 				C7D0FC101AC553320021618D /* Accelerate.framework */,
 				C7D0FC111AC553320021618D /* AVFoundation.framework */,
-				C7D0FC1F1AC556720021618D /* libVuforia.a */,
 				05D07789987C8EF4AAF74FE0 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -484,8 +543,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7B10E3C1ABC3D8D0020BFDB /* Images.xcassets in Resources */,
+				C725362E1AD29E0000F4103F /* markers.json in Resources */,
 				C7B10E3A1ABC3D8D0020BFDB /* LaunchScreen.xib in Resources */,
 				C7B10E3B1ABC3D8D0020BFDB /* Main.storyboard in Resources */,
+				C725363F1AD5307000F4103F /* vuforia-license.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,8 +562,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7B10E441ABC3DD40020BFDB /* Images.xcassets in Resources */,
+				C725362F1AD29E0000F4103F /* markers.json in Resources */,
 				C7B10E431ABC3DCF0020BFDB /* LaunchScreen.xib in Resources */,
 				C7B10E421ABC3DCA0020BFDB /* Main.storyboard in Resources */,
+				C72536401AD5307000F4103F /* vuforia-license.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,9 +645,8 @@
 				C7D0FBF91AC546890021618D /* NTNUDeviceCameraJSON.m in Sources */,
 				C7D0FC091AC54D9B0021618D /* OARFramemarker.mm in Sources */,
 				C7D0FBC71AC5447F0021618D /* PACMarker.cpp in Sources */,
-				C7B10E1C1ABC338B0020BFDB /* OARLogger.m in Sources */,
-				C7D0FBD21AC545AE0021618D /* NSLogCPP.mm in Sources */,
 				C7B10E531ABC42D70020BFDB /* UIDevice+Extensions.m in Sources */,
+				C72536381AD515B700F4103F /* OARLogger.m in Sources */,
 				C7D0FBC51AC5447F0021618D /* PACCameraCalibration.cpp in Sources */,
 				C7D0FBEF1AC546890021618D /* NTNUCameraCalibration.m in Sources */,
 				C7D0FBF11AC546890021618D /* NTNUCameraCalibrationFactory.m in Sources */,
@@ -593,14 +655,19 @@
 				C7B10DFD1ABC2D370020BFDB /* OARViewController.m in Sources */,
 				C7B10E561ABC44A10020BFDB /* NSNumber+CVPixelFormatType.m in Sources */,
 				C7B10E3F1ABC3D8D0020BFDB /* main.m in Sources */,
+				C7D0FC281AC56CCF0021618D /* OARMarkerDetector.mm in Sources */,
 				C7B10E5E1ABC47310020BFDB /* UIImage+Checkerboard.m in Sources */,
 				C7D0FBAB1ABC5CE40021618D /* OARIntrinsicView.m in Sources */,
 				C7D0FBC31AC5447F0021618D /* NTNUMarkerDetectorBridge.mm in Sources */,
 				C7B10DFA1ABC2D370020BFDB /* OARAppDelegate.m in Sources */,
+				C725363C1AD51DED00F4103F /* QCARUtilities.cpp in Sources */,
 				C7D0FBF71AC546890021618D /* NTNUDeviceCamera.m in Sources */,
+				C72536361AD515B700F4103F /* NSLogCPP.mm in Sources */,
+				C71256A41AD6BF3600EE9DC8 /* OARMarkerDetectorResult.m in Sources */,
 				C7D0FBF51AC546890021618D /* NTNUCameraCalibrationJSON.m in Sources */,
 				C7D0FC0B1AC54D9B0021618D /* OARFramemarkerJSON.m in Sources */,
 				C7B10E5C1ABC47310020BFDB /* NSString+CameraResolution.m in Sources */,
+				C7D0FC241AC56BEC0021618D /* OARMarkerDetectorFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -618,26 +685,30 @@
 			files = (
 				C7D0FBAC1ABC5F230021618D /* OARIntrinsicView.m in Sources */,
 				C7D0FBC41AC5447F0021618D /* NTNUMarkerDetectorBridge.mm in Sources */,
+				C7D0FC291AC56CCF0021618D /* OARMarkerDetector.mm in Sources */,
 				C7D0FBC61AC5447F0021618D /* PACCameraCalibration.cpp in Sources */,
 				C7D0FBF81AC546890021618D /* NTNUDeviceCamera.m in Sources */,
+				C725363D1AD51DED00F4103F /* QCARUtilities.cpp in Sources */,
 				C7D0FBCC1AC5447F0021618D /* PACTinyLA.cpp in Sources */,
 				C7D0FBF01AC546890021618D /* NTNUCameraCalibration.m in Sources */,
 				C7B10E4C1ABC416D0020BFDB /* OARVideoSource.m in Sources */,
-				C7B10E201ABC34560020BFDB /* OARLogger.m in Sources */,
+				C7D0FC251AC56BEC0021618D /* OARMarkerDetectorFactory.m in Sources */,
 				C7D0FC021AC546890021618D /* TransformationType.cpp in Sources */,
+				C72536391AD515B700F4103F /* OARLogger.m in Sources */,
 				C7D0FBF61AC546890021618D /* NTNUCameraCalibrationJSON.m in Sources */,
 				C7D0FC0A1AC54D9B0021618D /* OARFramemarker.mm in Sources */,
 				C7D0FBF21AC546890021618D /* NTNUCameraCalibrationFactory.m in Sources */,
 				C7D0FC0C1AC54D9B0021618D /* OARFramemarkerJSON.m in Sources */,
 				C7B10E5F1ABC47310020BFDB /* UIImage+Checkerboard.m in Sources */,
 				C7B10E211ABC34560020BFDB /* OARViewController.m in Sources */,
+				C72536371AD515B700F4103F /* NSLogCPP.mm in Sources */,
 				C7D0FBF41AC546890021618D /* NTNUCameraCalibrationFactoryJSON.m in Sources */,
-				C7D0FBD31AC545AE0021618D /* NSLogCPP.mm in Sources */,
 				C7D0FBCA1AC5447F0021618D /* PACMarkerDetector.cpp in Sources */,
 				C7D0FBC81AC5447F0021618D /* PACMarker.cpp in Sources */,
 				C7D0FBFA1AC546890021618D /* NTNUDeviceCameraJSON.m in Sources */,
 				C7B10E5D1ABC47310020BFDB /* NSString+CameraResolution.m in Sources */,
 				C7B10E401ABC3DB20020BFDB /* main.m in Sources */,
+				C71256A51AD6BF3600EE9DC8 /* OARMarkerDetectorResult.m in Sources */,
 				C7B10E571ABC44A40020BFDB /* NSNumber+CVPixelFormatType.m in Sources */,
 				C7B10E221ABC34560020BFDB /* OARAppDelegate.m in Sources */,
 			);
@@ -677,6 +748,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -693,7 +765,6 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -712,10 +783,12 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/OpenAR/libraries/vuforia/include",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/lib/libstdc++.dylib";
 				SDKROOT = iphoneos;
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -723,6 +796,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -740,7 +814,6 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -752,10 +825,12 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/OpenAR/libraries/vuforia/include",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/lib/libstdc++.dylib";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Release;
 		};
@@ -764,15 +839,47 @@
 			baseConfigurationReference = 67BA103F224BBE5502DC10E2 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/CocoaLumberjack\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/calib3d\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/contrib\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/core\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/features2d\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/flann\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/highgui\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/imgproc\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/legacy\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/ml\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/nonfree\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/objdetect\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/photo\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/stitching\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/stitching/detail\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/video\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/videostab\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/world\"",
+					"\"${PODS_ROOT}/Headers/Public/boost\"",
+					"\"${PODS_ROOT}/Headers/Public/eigen\"",
+					"\"${PODS_ROOT}/boost\"",
+					"\"${PODS_ROOT}/boost\"",
+					"\"${PODS_ROOT}/boost\"",
+					"\"${PODS_ROOT}/boost\"",
+					"\"${PODS_ROOT}/boost\"",
+					"\"${PODS_ROOT}/boost\"",
+					"\"${PODS_ROOT}/boost\"",
+					"\"${PODS_ROOT}/boost\"",
+					"\"${PODS_ROOT}/eigen\"",
+					"$(SRCROOT)/Libraries/Vuforia/include",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/OpenAR/Resources/OpenAR-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/OpenAR/External",
-					Libraries,
-					"$(PROJECT_DIR)/OpenAR/External",
-					Libraries/libVuforia/lib/arm,
-					"$(PROJECT_DIR)/OpenAR/libraries/vuforia/lib/arm",
+					"$(SRCROOT)/Libraries/Vuforia/lib/arm",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -784,15 +891,47 @@
 			baseConfigurationReference = 0662252C111B9520A1365D4A /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/CocoaLumberjack\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/calib3d\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/contrib\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/core\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/features2d\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/flann\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/highgui\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/imgproc\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/legacy\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/ml\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/nonfree\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/objdetect\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/photo\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/stitching\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/stitching/detail\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/video\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/videostab\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/world\"",
+					"\"${PODS_ROOT}/Headers/Public/boost\"",
+					"\"${PODS_ROOT}/Headers/Public/eigen\"",
+					"\"${PODS_ROOT}/boost\"",
+					"\"${PODS_ROOT}/boost\"",
+					"\"${PODS_ROOT}/boost\"",
+					"\"${PODS_ROOT}/boost\"",
+					"\"${PODS_ROOT}/boost\"",
+					"\"${PODS_ROOT}/boost\"",
+					"\"${PODS_ROOT}/boost\"",
+					"\"${PODS_ROOT}/boost\"",
+					"\"${PODS_ROOT}/eigen\"",
+					"$(SRCROOT)/Libraries/Vuforia/include",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/OpenAR/Resources/OpenAR-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/OpenAR/External",
-					Libraries,
-					"$(PROJECT_DIR)/OpenAR/External",
-					Libraries/libVuforia/lib/arm,
-					"$(PROJECT_DIR)/OpenAR/libraries/vuforia/lib/arm",
+					"$(SRCROOT)/Libraries/Vuforia/lib/arm",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -841,16 +980,50 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"DEVELOPMENT=1",
+					"TIME_PERFORMANCE=1",
+					"MATRICES=1",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/CocoaLumberjack\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/calib3d\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/contrib\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/core\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/features2d\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/flann\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/highgui\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/imgproc\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/legacy\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/ml\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/nonfree\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/objdetect\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/photo\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/stitching\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/stitching/detail\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/video\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/videostab\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/world\"",
+					"\"${PODS_ROOT}/Headers/Public/boost\"",
+					"\"${PODS_ROOT}/Headers/Public/eigen\"",
+					"\"${PODS_ROOT}/boost\"",
+					"\"${PODS_ROOT}/boost\"",
+					"\"${PODS_ROOT}/boost\"",
+					"\"${PODS_ROOT}/boost\"",
+					"\"${PODS_ROOT}/boost\"",
+					"\"${PODS_ROOT}/boost\"",
+					"\"${PODS_ROOT}/boost\"",
+					"\"${PODS_ROOT}/boost\"",
+					"\"${PODS_ROOT}/eigen\"",
+					"$(SRCROOT)/Libraries/Vuforia/include",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/OpenAR/Resources/OpenAR Development-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/OpenAR/External",
-					Libraries,
-					"$(PROJECT_DIR)/OpenAR/External",
-					Libraries/libVuforia/lib/arm,
-					"$(PROJECT_DIR)/OpenAR/libraries/vuforia/lib/arm",
+					"$(SRCROOT)/Libraries/Vuforia/lib/arm",
 				);
 				PRODUCT_NAME = "OpenAR Development";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -866,15 +1039,47 @@
 					"$(inherited)",
 					"DEVELOPMENT=1",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/CocoaLumberjack\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/calib3d\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/contrib\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/core\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/features2d\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/flann\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/highgui\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/imgproc\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/legacy\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/ml\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/nonfree\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/objdetect\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/photo\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/stitching\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/stitching/detail\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/video\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/videostab\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenCV/opencv2/world\"",
+					"\"${PODS_ROOT}/Headers/Public/boost\"",
+					"\"${PODS_ROOT}/Headers/Public/eigen\"",
+					"\"${PODS_ROOT}/boost\"",
+					"\"${PODS_ROOT}/boost\"",
+					"\"${PODS_ROOT}/boost\"",
+					"\"${PODS_ROOT}/boost\"",
+					"\"${PODS_ROOT}/boost\"",
+					"\"${PODS_ROOT}/boost\"",
+					"\"${PODS_ROOT}/boost\"",
+					"\"${PODS_ROOT}/boost\"",
+					"\"${PODS_ROOT}/eigen\"",
+					"$(SRCROOT)/Libraries/Vuforia/include",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/OpenAR/Resources/OpenAR Development-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/OpenAR/External",
-					Libraries,
-					"$(PROJECT_DIR)/OpenAR/External",
-					Libraries/libVuforia/lib/arm,
-					"$(PROJECT_DIR)/OpenAR/libraries/vuforia/lib/arm",
+					"$(SRCROOT)/Libraries/Vuforia/lib/arm",
 				);
 				PRODUCT_NAME = "OpenAR Development";
 				TARGETED_DEVICE_FAMILY = "1,2";
